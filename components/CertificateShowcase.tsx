@@ -11,11 +11,11 @@ interface CertMeta {
 }
 
 const certs: CertMeta[] = [
-  { id: 'ibm', src: '/cert-ibm.png', alt: 'IBM Python for Data Science Certificate',
+  { id: 'ms2', src: '/cert-ms-2.png', alt: 'Microsoft Azure Fundamentals Certificate', 
     rotate: '-7deg',  translateX: '-62px', translateY: '14px',  zIndex: 1 },
-  { id: 'fcc', src: '/cert-fcc.png', alt: 'freeCodeCamp Machine Learning with Python Certificate',
+  { id: 'ms3', src: '/cert-ms-3.png', alt: 'Microsoft Azure AI Engineer Certificate', 
     rotate:  '6deg',  translateX:  '62px', translateY: '20px',  zIndex: 2 },
-  { id: 'ms',  src: '/cert-ms.png',  alt: 'Microsoft Certified Expert Certificate',
+  { id: 'ms',  src: '/cert-ms.png',  alt: 'Microsoft Certified Expert Certificate', 
     rotate: '-1deg',  translateX:   '0px', translateY:  '0px',  zIndex: 3 },
 ];
 

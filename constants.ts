@@ -4,47 +4,8 @@ export const COURSE_DATA: Category[] = [
   {
     id: 'recommended',
     title: '🚀 Key Recommendations',
-    description: 'Curated paths specifically for Machain Learning, AI, and Cloud Computing.',
+    description: 'Curated paths specifically for Microsoft Azure, AI, and Cloud technologies.',
     courses: [
-
-      {
-        id: 'ibm-ai-intro',
-        title: 'Getting Started with Artificial Intelligence',
-        topics: [
-          'Foundations of AI',
-          'AI Applications',
-          'Algorithmic Concepts',
-          'Generative AI',
-          'Prompt Engineering',
-          'Real-World Case Studies',
-          'Hands-on with Generative AI Tools'
-        ],
-        level: CourseLevel.Beginner,
-        link: 'https://skillsbuild.org/college-students/course-catalog/getting-started-with-artificial-intelligence',
-        isRecommended: true,
-        details: 'This 3-hour course covers essential Artificial Intelligence concepts, common AI applications, the basics of generative AI, and prompt engineering. Learners get practical experience by working directly with AI tools to refine and create prompts. Completion earns an IBM Digital Badge via Credly.',
-        prerequisites: ['No prior experience required'],
-      },
-
-      {
-        id: 'fcc-python',
-        title: 'Python Certification',
-        topics: [
-          'Python Fundamentals',
-          'Control Structures',
-          'Data Structures',
-          'Functions',
-          'OOP in Python',
-          'File and API Operations',
-          'Testing and Debugging',
-          'Portfolio Projects'
-        ],
-        level: CourseLevel.Beginner,
-        link: 'https://www.freecodecamp.org/learn/python-v9/',
-        isRecommended: true,
-        details: 'A project-based Python certification that takes you from absolute beginner to job-ready fundamentals. Interactive challenges and projects build skill in variables, functions, OOP, file operations, API use, and debugging. The course concludes with several real-world projects for demonstrable Python fluency and awards a certification upon completion.',
-        prerequisites: ['No prior experience required'],
-      },
       {
         id: 'ml-concepts',
         title: 'Introduction to Machine Learning Concepts',
@@ -55,25 +16,6 @@ export const COURSE_DATA: Category[] = [
         prerequisites: ['Basic Math'],
         isRecommended: true,
 
-      },
-      {
-        id: 'ibm-cybersecurity-intro',
-        title: 'Getting Started with Cybersecurity',
-        topics: [
-          'Cybersecurity Fundamentals',
-          'Key Elements & Threats',
-          'Data Privacy',
-          'CIA Triad Model',
-          'Security Evaluation',
-          'Cybersecurity Careers',
-          'Essential Skills for Cyber Roles',
-          'Intro to Security Tools'
-        ],
-        level: CourseLevel.Beginner,
-        link: 'https://skillsbuild.org/college-students/course-catalog/getting-started-with-cybersecurity',
-        isRecommended: true,
-        details: 'This course provides foundational knowledge of cybersecurity including data protection, privacy, security evaluation using the CIA triad, and current cyber threats. Learners explore skills required for cybersecurity jobs and understand fundamental tools. Completing the course earns an IBM digital badge via Credly.',
-        prerequisites: ['No prior experience required'],
       },
       {
         id: 'web-start',
@@ -87,47 +29,6 @@ export const COURSE_DATA: Category[] = [
 
       },
       {
-        id: 'dlai-rag',
-        title: 'Retrieval Augmented Generation (RAG) Course',
-        topics: [
-          'Retrieval-Augmented Generation (RAG)',
-          'Document Retrieval',
-          'Vector Databases (Weaviate)',
-          'Keyword and Semantic Search',
-          'Prompt Engineering',
-          'Hybrid Retrieval',
-          'Evaluation & Monitoring',
-          'Production Deployment'
-        ],
-        level: CourseLevel.Intermediate,
-        link: 'https://www.deeplearning.ai/courses/retrieval-augmented-generation-rag/',
-        isRecommended: true,
-        details: 'Master the practical design and implementation of RAG systems for real-world applications. The course covers every core RAG component: document retrieval, vector/semantic search, database integration, prompt augmentation, evaluation, and moving projects from prototype to production—including unique tradeoffs, error analysis, and performance tuning.',
-        prerequisites: [
-          'Intermediate Python skills',
-          'Basic generative AI concepts',
-          'basics Linear algebra'
-        ],
-      },
-      {
-        id: 'ibm-data-intro',
-        title: 'Getting Started with Data',
-        topics: [
-          'Basics of Data',
-          'Data Sources & Types',
-          'Data Collection',
-          'Data Quality & Cleaning',
-          'Data Visualization',
-          'Data Ethics & Privacy',
-          'Intro to Data-Driven Roles'
-        ],
-        level: CourseLevel.Beginner,
-        link: 'https://skills.yourlearning.ibm.com/activity/PLAN-14F2691E3A32?ngo-id=0302',
-        isRecommended: true,
-        details: 'An entry-level, ~3-hour course presenting foundational concepts in data science. You’ll explore what data is, the different types of data, why quality and cleaning matter, basic data visualization, and jobs in the data field. Successfully finishing the course earns an IBM SkillsBuild digital badge.',
-        prerequisites: ['No prior experience required'],
-      },
-      {
         id: 'rec-genai-intro',
         title: 'Introduction to Generative AI and Agents',
         topics: ['Generative AI', 'LLMs', 'Prompting', 'AI Agents', 'Agentic AI'],
@@ -135,26 +36,6 @@ export const COURSE_DATA: Category[] = [
         link: 'https://learn.microsoft.com/training/modules/fundamentals-generative-ai/?WT.mc_id=academic&wt.mc_id=studentamb_490905',
         isRecommended: true,
         details: 'Understand how Large Language Models (LLMs) work, how to craft effective prompts, and the emerging field of autonomous AI agents.',
-        prerequisites: ['No prior experience required'],
-      },
-      {
-        id: 'fcc-js',
-        title: 'JavaScript Certification',
-        topics: [
-          'JavaScript Basics',
-          'Data Structures',
-          'ES6 Features',
-          'Functions and Scope',
-          'DOM Manipulation',
-          'Object-Oriented Programming',
-          'APIs and Fetch',
-          'Test-Driven Development',
-          'Frontend Project-Building'
-        ],
-        level: CourseLevel.Beginner,
-        link: 'https://www.freecodecamp.org/learn/javascript-v9/',
-        isRecommended: true,
-        details: 'A comprehensive, hands-on program covering JavaScript from fundamentals to more advanced features like ES6, OOP, and APIs. Lessons combine interactive coding challenges, quizzes, and real-world projects (such as calculator and drum machine apps), ensuring strong foundations in JS for front-end development. Completion awards a recognized JavaScript certification.',
         prerequisites: ['No prior experience required'],
       },
       {
@@ -168,7 +49,6 @@ export const COURSE_DATA: Category[] = [
         isRecommended: true,
 
       },
-
       {
         id: 'py-vscode',
         title: 'Getting Started with Python in VS Code',
@@ -181,44 +61,6 @@ export const COURSE_DATA: Category[] = [
 
       },
       {
-        id: 'ibm-llm-intro',
-        title: 'Introduction to Large Language Models',
-        topics: [
-          'Overview of LLMs',
-          'IBM Granite Models',
-          'Prompt Engineering',
-          'LLM Use Cases (Customer Service, Content Creation)',
-          'Model Capabilities & Limitations',
-          'Practical LLM Guidance',
-          'Simulation with IBM Granite'
-        ],
-        level: CourseLevel.Beginner,
-        link: 'https://skills.yourlearning.ibm.com/activity/MDL-568?ngo-id=0302',
-        isRecommended: true,
-        details: 'A beginner-level, 1.5-hour course introducing large language models (LLMs), including hands-on use with IBM Granite models. Learn LLM concepts, explore prompting strategies for targeted outcomes, and apply LLMs in real-world scenarios such as customer service and content creation. Includes a guided simulation on crafting blog content using Granite.',
-        prerequisites: ['No prior experience required'],
-      },
-      {
-        id: 'fcc-responsive-web',
-        title: 'Responsive Web Design Certification',
-        topics: [
-          'HTML',
-          'CSS',
-          'Accessibility',
-          'Modern Layouts',
-          'Semantic HTML',
-          'Responsive Design',
-          'SEO Fundamentals',
-          'Forms and Tables',
-          'Project-Based Learning (Survey Form, Product Landing Page, etc.)'
-        ],
-        level: CourseLevel.Beginner,
-        link: 'https://www.freecodecamp.org/learn/responsive-web-design-v9/',
-        isRecommended: true,
-        details: 'This self-paced, certification-track course teaches you the fundamentals of user-friendly, accessible web development using HTML and CSS. You learn through interactive labs and build multiple real-world projects (survey forms, landing pages, technical docs) to showcase your skills. The program emphasizes best practices in design and web accessibility, preparing you for modern front-end roles.',
-        prerequisites: ['No prior experience required'],
-      },
-      {
         id: 'ml-cert',
         title: 'Microsoft Certified: Azure Data Scientist Associate',
         topics: ['Data Science', 'ML Models', 'MLflow', 'Azure AI Services', 'Python'],
@@ -229,110 +71,6 @@ export const COURSE_DATA: Category[] = [
         isRecommended: true,
 
       },
-      {
-        id: 'ibm-cybersecurity-fund',
-        title: 'Cybersecurity Fundamentals',
-        topics: [
-          'Cybersecurity Concepts',
-          'Types of Attacks',
-          'Threat Groups',
-          'Risk Management',
-          'Cryptography',
-          'Social Engineering',
-          'Case Studies',
-          'Incident Response',
-          'Cybersecurity Careers'
-        ],
-        level: CourseLevel.Beginner,
-        link: 'https://skillsbuild.org/college-students/course-catalog/cybersecurity-fundamentals',
-        isRecommended: true,
-        details: 'A foundational program for understanding cybersecurity threats, strategies, and practices. Learn the landscape of digital threats, cryptographic protections, real-world attack cases, incident response frameworks, and job market landscape. The course includes hands-on evaluation of threats/scenarios and is designed for further upskilling or entry roles. Earn an IBM Digital Badge on completion.',
-        prerequisites: ['No prior experience required'],
-      },
-
-      {
-        id: 'fcc-backend-apis',
-        title: 'Back End Development and APIs Certification',
-        topics: [
-          'Node.js',
-          'Express.js',
-          'REST APIs',
-          'MongoDB',
-          'CRUD Operations',
-          'Authentication',
-          'Testing and Debugging',
-          'Project-Based Backend Apps'
-        ],
-        level: CourseLevel.Beginner,
-        link: 'https://www.freecodecamp.org/learn/back-end-development-and-apis-v9/',
-        isRecommended: true,
-        details: 'A beginner-friendly full stack curriculum focused on server-side and API development with Node.js, Express.js, and MongoDB. You learn to build and test RESTful APIs, perform CRUD operations, manage authentication, and deploy real-world applications. The course is project-based and includes a certification on completion.',
-        prerequisites: [
-          'Basic JavaScript'
-        ],
-      },
-
-      {
-        id: 'fcc-relational-db',
-        title: 'Relational Databases Certification',
-        topics: [
-          'Relational Database Design',
-          'SQL',
-          'PostgreSQL',
-          'Normalization',
-          'Data Modeling',
-          'CRUD Operations',
-          'Advanced Queries (Joins, Aggregation)',
-          'Database Security',
-          'Real-World Projects'
-        ],
-        level: CourseLevel.Beginner,
-        link: 'https://www.freecodecamp.org/learn/relational-databases-v9/',
-        isRecommended: true,
-        details: 'This hands-on certification teaches you how to design, query, and manage relational databases with SQL and PostgreSQL. Lessons progress from ER modeling and normalization basics to advanced query techniques, security, and project deployment. You build several real-world projects for portfolio proof and certification.',
-        prerequisites: ['No prior experience required'],
-      },
-      {
-        id: 'ibm-cloud-fundamentals',
-        title: 'Cloud Computing Fundamentals (Earn a credential!)',
-        topics: [
-          'Cloud Computing Basics',
-          'Types of Cloud Services (IaaS, PaaS, SaaS)',
-          'Deployment Models',
-          'Virtualization and Containers',
-          'Cloud Security and Compliance',
-          'Practical Cloud Applications',
-          'Cloud Career Paths'
-        ],
-        level: CourseLevel.Beginner,
-        link: 'https://skills.yourlearning.ibm.com/activity/PLAN-2EC3A305F2C3?ngo-id=0302',
-        isRecommended: true,
-        details: 'This ~3-hour credential-earning course covers foundational cloud computing concepts, service models (IaaS, PaaS, SaaS), deployment strategies, security requirements, and real-world cloud solutions. Prepares you for further cloud certifications and offers a digital badge on completion.',
-        prerequisites: ['No prior experience required'],
-      },
-      {
-        id: 'fcc-frontend-libraries',
-        title: 'Front End Development Libraries Certification',
-        topics: [
-          'React',
-          'Redux',
-          'Bootstrap',
-          'jQuery',
-          'SASS',
-          'UI Component Building',
-          'State Management',
-          'Single Page Apps',
-          'React Project Labs'
-        ],
-        level: CourseLevel.Intermediate,
-        link: 'https://www.freecodecamp.org/learn/front-end-development-libraries-v9/',
-        isRecommended: true,
-        details: 'An intermediate, project-based certification on the key libraries in modern front-end web development. You’ll develop hands-on proficiency in React and Redux patterns, use Bootstrap and jQuery for rapid UI features, practice SASS styling, and build production-grade front-end apps through guided projects. Certification validates your ability to design, build, and deploy scalable interfaces.',
-        prerequisites: [
-          'Basic JavaScript',
-          'HTML/CSS familiarity'
-        ],
-      }
     ]
   },
   {
@@ -487,55 +225,9 @@ export const COURSE_DATA: Category[] = [
   },
   {
     id: 'ai-genai',
-    title: 'Artificial Intelligence & Generative AI',
+    title: 'Azure AI & Generative AI',
     description: 'Master the future of technology with courses on LLMs, Copilot, and Azure AI.',
     courses: [
-      {
-        id: 'dlai-agentic-ai',
-        title: 'Agentic AI with Andrew Ng',
-        topics: [
-          'Agentic Design Patterns',
-          'Reflection',
-          'Tool Use',
-          'Planning',
-          'Multi-Agent Workflows',
-          'LLM Integration',
-          'Tool/API Integration',
-          'Evaluation & Optimization',
-          'Production Deployment'
-        ],
-        level: CourseLevel.Intermediate,
-        link: 'https://www.deeplearning.ai/courses/agentic-ai/',
-        isRecommended: true,
-        details: 'Gain practical skills to build agentic AI systems—AI that takes iterative, multi-step actions based on workflows, tool use, and self-evaluation. The course covers foundational design patterns, tool integration, multi-agent orchestration, and system evaluation/optimization, preparing you to develop and deploy production-grade agentic applications.',
-        prerequisites: [
-          'Intermediate Python programming',
-          'Basic understanding of LLMs and APIs'
-        ],
-      },
-      {
-        id: 'dlai-rag',
-        title: 'Retrieval Augmented Generation (RAG) Course',
-        topics: [
-          'Retrieval-Augmented Generation (RAG)',
-          'Document Retrieval',
-          'Vector Databases (Weaviate)',
-          'Keyword and Semantic Search',
-          'Prompt Engineering',
-          'Hybrid Retrieval',
-          'Evaluation & Monitoring',
-          'Production Deployment'
-        ],
-        level: CourseLevel.Intermediate,
-        link: 'https://www.deeplearning.ai/courses/retrieval-augmented-generation-rag/',
-        isRecommended: true,
-        details: 'Master the practical design and implementation of RAG systems for real-world applications. The course covers every core RAG component: document retrieval, vector/semantic search, database integration, prompt augmentation, evaluation, and moving projects from prototype to production—including unique tradeoffs, error analysis, and performance tuning.',
-        prerequisites: [
-          'Intermediate Python skills',
-          'Basic generative AI concepts',
-          'High school–level math'
-        ],
-      },
       {
         id: 'ai-intro',
         title: 'Introduction to AI',         // meeeeeeeeeeeeeee
@@ -545,7 +237,6 @@ export const COURSE_DATA: Category[] = [
         details: 'Get started with Artificial Intelligence on Azure. Learn about Computer Vision, NLP, and Document Intelligence services.',
         prerequisites: ['No prior experience required'],
       },
-
       {
         id: 'ai-genai-intro',
         title: 'Introduction to Generative AI and Agents', ///////kkkkriiiim
@@ -553,63 +244,6 @@ export const COURSE_DATA: Category[] = [
         level: CourseLevel.Beginner,
         link: 'https://learn.microsoft.com/training/modules/fundamentals-generative-ai/?WT.mc_id=academic&wt.mc_id=studentamb_490905',
         details: 'Explore the fundamentals of Generative AI, including how models are trained and how to use them responsibly.',
-        prerequisites: ['No prior experience required'],
-      },
-      {
-        id: 'ibm-llm-intro',
-        title: 'Introduction to Large Language Models',
-        topics: [
-          'Overview of LLMs',
-          'IBM Granite Models',
-          'Prompt Engineering',
-          'LLM Use Cases (Customer Service, Content Creation)',
-          'Model Capabilities & Limitations',
-          'Practical LLM Guidance',
-          'Simulation with IBM Granite'
-        ],
-        level: CourseLevel.Beginner,
-        link: 'https://skills.yourlearning.ibm.com/activity/MDL-568?ngo-id=0302',
-        isRecommended: true,
-        details: 'A beginner-level, 1.5-hour course introducing large language models (LLMs), including hands-on use with IBM Granite models. Learn LLM concepts, explore prompting strategies for targeted outcomes, and apply LLMs in real-world scenarios such as customer service and content creation. Includes a guided simulation on crafting blog content using Granite.',
-        prerequisites: ['No prior experience required'],
-      },
-      {
-        id: 'ibm-ai-intro',
-        title: 'Getting Started with Artificial Intelligence',
-        topics: [
-          'Foundations of AI',
-          'AI Applications',
-          'Algorithmic Concepts',
-          'Generative AI',
-          'Prompt Engineering',
-          'Real-World Case Studies',
-          'Hands-on with Generative AI Tools'
-        ],
-        level: CourseLevel.Beginner,
-        link: 'https://skillsbuild.org/college-students/course-catalog/getting-started-with-artificial-intelligence',
-        isRecommended: true,
-        details: 'This 3-hour course covers essential Artificial Intelligence concepts, common AI applications, the basics of generative AI, and prompt engineering. Learners get practical experience by working directly with AI tools to refine and create prompts. Completion earns an IBM Digital Badge via Credly.',
-        prerequisites: ['No prior experience required'],
-      },
-
-      {
-        id: 'ibm-ai-fundamentals',
-        title: 'Artificial Intelligence Fundamentals',
-        topics: [
-          'Natural Language Processing',
-          'Computer Vision',
-          'Machine Learning',
-          'Deep Learning',
-          'Chatbots',
-          'Neural Networks',
-          'AI Ethics',
-          'AI Applications',
-          'Watson Studio (AI model deployment)'
-        ],
-        level: CourseLevel.Beginner,
-        link: 'https://skillsbuild.org/college-students/course-catalog/artificial-intelligence-fundamentals',
-        isRecommended: true,
-        details: 'A comprehensive, 10+ hour course offering conceptual knowledge and hands-on skills across the landscape of AI—including NLP, vision, machine/deep learning, chatbots, neural networks, AI ethics, and deployment basics in IBM Watson Studio. Includes job outlook and career guidance for AI-related roles. Earn an IBM Digital Badge on completion.',
         prerequisites: ['No prior experience required'],
       },
       {
@@ -625,7 +259,7 @@ export const COURSE_DATA: Category[] = [
   },
   {
     id: 'machine-learning',
-    title: 'Machine Learning',
+    title: 'Azure Machine Learning',
     description: 'Build, train, and deploy models using Azure Machine Learning and Python.',
     courses: [
       {
@@ -639,27 +273,6 @@ export const COURSE_DATA: Category[] = [
         isRecommended: true,
       },
       {
-        id: 'ibm-ml-ds-projects',
-        title: 'Machine Learning for Data Science Projects',
-        topics: [
-          'Data Science Process',
-          'Machine Learning Fundamentals',
-          'Project Design & Deployment',
-          'Feature Engineering',
-          'Model Evaluation',
-          'Real-World Case Studies',
-          'Job Readiness Skills'
-        ],
-        level: CourseLevel.Intermediate,
-        link: 'https://skills.yourlearning.ibm.com/activity/PLAN-D8E7C82C1D76?ngo-id=0302',
-        isRecommended: true,
-        details: 'A comprehensive 20-hour learning plan focused on building, evaluating, and deploying machine learning projects within data science workflows. Participants gain practical skills in feature engineering, model selection, error analysis, and project design through applied labs. Strong emphasis is placed on job readiness for data science roles.',
-        prerequisites: [
-          'Basic Python/programming',
-          'Some exposure to data analysis'
-        ],
-      },
-      {
         id: 'ml-create',                            //krim
         title: 'Create Machine Learning Models',
         topics: ['Regression', 'Classification', 'Clustering', 'Deep Learning'],
@@ -667,24 +280,6 @@ export const COURSE_DATA: Category[] = [
         link: 'https://learn.microsoft.com/training/paths/create-machine-learn-models/?WT.mc_id=academic&wt.mc_id=studentamb_490905',
         details: 'Hands-on labs using Python to train models with Scikit-Learn and PyTorch within the Azure environment.',
         prerequisites: ['Python', 'Basic ML Concepts'],
-      },
-      {
-        id: 'ibm-data-intro',
-        title: 'Getting Started with Data (Earn a credential!)',
-        topics: [
-          'Basics of Data',
-          'Data Sources & Types',
-          'Data Collection',
-          'Data Quality & Cleaning',
-          'Data Visualization',
-          'Data Ethics & Privacy',
-          'Intro to Data-Driven Roles'
-        ],
-        level: CourseLevel.Beginner,
-        link: 'https://skills.yourlearning.ibm.com/activity/PLAN-14F2691E3A32?ngo-id=0302',
-        isRecommended: true,
-        details: 'An entry-level, ~3-hour course presenting foundational concepts in data science. You’ll explore what data is, the different types of data, why quality and cleaning matter, basic data visualization, and jobs in the data field. Successfully finishing the course earns an IBM SkillsBuild digital badge.',
-        prerequisites: ['No prior experience required'],
       },
       {
         id: 'ml-pipeline',
@@ -708,28 +303,9 @@ export const COURSE_DATA: Category[] = [
   },
   {
     id: 'python',
-    title: 'Python Development',
+    title: 'Python on Azure & VS Code',
     description: 'From basics to advanced data analysis and intelligent apps.',
     courses: [
-      {
-        id: 'fcc-python',
-        title: 'Python Certification',
-        topics: [
-          'Python Fundamentals',
-          'Control Structures',
-          'Data Structures',
-          'Functions',
-          'OOP in Python',
-          'File and API Operations',
-          'Testing and Debugging',
-          'Portfolio Projects'
-        ],
-        level: CourseLevel.Beginner,
-        link: 'https://www.freecodecamp.org/learn/python-v9/',
-        isRecommended: true,
-        details: 'A project-based Python certification that takes you from absolute beginner to job-ready fundamentals. Interactive challenges and projects build skill in variables, functions, OOP, file operations, API use, and debugging. The course concludes with several real-world projects for demonstrable Python fluency and awards a certification upon completion.',
-        prerequisites: ['No prior experience required'],
-      },
       {
         id: 'py-analyze',
         title: 'Explore and analyze data with Python',            //me
@@ -748,8 +324,6 @@ export const COURSE_DATA: Category[] = [
         details: 'Set up Visual Studio 2022 for Python development, including environment management and debugging tools.',
         prerequisites: ['No prior experience required'],
       },
-
-
       {
         id: 'py-copilot',  //me
         title: 'Using GitHub Copilot with Python',
@@ -772,29 +346,9 @@ export const COURSE_DATA: Category[] = [
   },
   {
     id: 'web-dev',
-    title: 'Web Development',
+    title: 'Web Dev with MS Tools',
     description: 'Modern web technologies including React, Node.js, and ASP.NET Core.',
     courses: [
-      {
-        id: 'fcc-responsive-web',
-        title: 'Responsive Web Design Certification',
-        topics: [
-          'HTML',
-          'CSS',
-          'Accessibility',
-          'Modern Layouts',
-          'Semantic HTML',
-          'Responsive Design',
-          'SEO Fundamentals',
-          'Forms and Tables',
-          'Project-Based Learning (Survey Form, Product Landing Page, etc.)'
-        ],
-        level: CourseLevel.Beginner,
-        link: 'https://www.freecodecamp.org/learn/responsive-web-design-v9/',
-        isRecommended: true,
-        details: 'This self-paced, certification-track course teaches you the fundamentals of user-friendly, accessible web development using HTML and CSS. You learn through interactive labs and build multiple real-world projects (survey forms, landing pages, technical docs) to showcase your skills. The program emphasizes best practices in design and web accessibility, preparing you for modern front-end roles.',
-        prerequisites: ['No prior experience required'],
-      },
       {
         id: 'web-start',       ///krrr
         title: 'Get started with web development using Visual Studio Code',
@@ -805,30 +359,6 @@ export const COURSE_DATA: Category[] = [
         prerequisites: ['No prior experience required'],
       },
       {
-        id: 'fcc-frontend-libraries',
-        title: 'Front End Development Libraries Certification',
-        topics: [
-          'React',
-          'Redux',
-          'Bootstrap',
-          'jQuery',
-          'SASS',
-          'UI Component Building',
-          'State Management',
-          'Single Page Apps',
-          'React Project Labs'
-        ],
-        level: CourseLevel.Intermediate,
-        link: 'https://www.freecodecamp.org/learn/front-end-development-libraries-v9/',
-        isRecommended: true,
-        details: 'An intermediate, project-based certification on the key libraries in modern front-end web development. You’ll develop hands-on proficiency in React and Redux patterns, use Bootstrap and jQuery for rapid UI features, practice SASS styling, and build production-grade front-end apps through guided projects. Certification validates your ability to design, build, and deploy scalable interfaces.',
-        prerequisites: [
-          'Basic JavaScript',
-          'HTML/CSS familiarity'
-        ],
-      },
-
-      {
         id: 'web-html',
         title: 'Build web pages with HTML and CSS for beginners',      //meee
         topics: ['HTML', 'CSS', 'Web Pages', 'VS Code', 'Web Accessibility'],
@@ -837,57 +367,13 @@ export const COURSE_DATA: Category[] = [
         details: 'Deep dive into semantic HTML tags, CSS styling, layout techniques, and accessibility best practices.',
         prerequisites: ['No prior experience required'],
       },
-      {
-        id: 'fcc-backend-apis',
-        title: 'Back End Development and APIs Certification',
-        topics: [
-          'Node.js',
-          'Express.js',
-          'REST APIs',
-          'MongoDB',
-          'CRUD Operations',
-          'Authentication',
-          'Testing and Debugging',
-          'Project-Based Backend Apps'
-        ],
-        level: CourseLevel.Beginner,
-        link: 'https://www.freecodecamp.org/learn/back-end-development-and-apis-v9/',
-        isRecommended: true,
-        details: 'A beginner-friendly full stack curriculum focused on server-side and API development with Node.js, Express.js, and MongoDB. You learn to build and test RESTful APIs, perform CRUD operations, manage authentication, and deploy real-world applications. The course is project-based and includes a certification on completion.',
-        prerequisites: [
-          'Basic JavaScript'
-        ],
-      },
-
-      {
-        id: 'fcc-js',
-        title: 'JavaScript Certification',
-        topics: [
-          'JavaScript Basics',
-          'Data Structures',
-          'ES6 Features',
-          'Functions and Scope',
-          'DOM Manipulation',
-          'Object-Oriented Programming',
-          'APIs and Fetch',
-          'Test-Driven Development',
-          'Frontend Project-Building'
-        ],
-        level: CourseLevel.Beginner,
-        link: 'https://www.freecodecamp.org/learn/javascript-v9/',
-        isRecommended: true,
-        details: 'A comprehensive, hands-on program covering JavaScript from fundamentals to more advanced features like ES6, OOP, and APIs. Lessons combine interactive coding challenges, quizzes, and real-world projects (such as calculator and drum machine apps), ensuring strong foundations in JS for front-end development. Completion awards a recognized JavaScript certification.',
-        prerequisites: ['No prior experience required'],
-      },
-
     ]
   },
   {
     id: 'csharp',
-    title: 'C# Development',
+    title: 'C# & .NET Development',
     description: 'Core fundamentals for building robust applications on the .NET platform.',
     courses: [
-
       {
         id: 'cs-write',           //ee
         title: 'Write your first C# code',
@@ -897,53 +383,13 @@ export const COURSE_DATA: Category[] = [
         details: 'Focuses on syntax precision, compilation, and understanding the .NET runtime environment.',
         prerequisites: ['No prior experience required'],
       },
-      {
-        id: 'fcc-csharp',
-        title: 'Foundational C# with Microsoft Certification',
-        topics: [
-          'C# Syntax',
-          'Variables & Data Types',
-          'Control Structures',
-          'Methods & Functions',
-          'Object-Oriented Programming',
-          'Exception Handling & Debugging',
-          'Console Applications',
-          'Portfolio Projects'
-        ],
-        level: CourseLevel.Beginner,
-        link: 'https://www.freecodecamp.org/learn/foundational-c-sharp-with-microsoft/',
-        isRecommended: true,
-        details: "Un parcours complet et interactif pour maîtriser la syntaxe C#, la programmation orientée objet, la gestion des exceptions et l’écriture d’applications console. Projets guidés et certifications Microsoft inclus.",
-        prerequisites: [
-          'Aucune connaissance préalable'
-        ],
-      }
-
     ]
   },
   {
     id: 'cloud',
-    title: 'Cloud Computing',   //
+    title: 'Azure Cloud Computing',   //
     description: 'Essential knowledge for cloud computing and infrastructure.',
     courses: [
-      {
-        id: 'ibm-cloud-fundamentals',
-        title: 'Cloud Computing Fundamentals (Earn a credential!)',
-        topics: [
-          'Cloud Computing Basics',
-          'Types of Cloud Services (IaaS, PaaS, SaaS)',
-          'Deployment Models',
-          'Virtualization and Containers',
-          'Cloud Security and Compliance',
-          'Practical Cloud Applications',
-          'Cloud Career Paths'
-        ],
-        level: CourseLevel.Beginner,
-        link: 'https://skills.yourlearning.ibm.com/activity/PLAN-2EC3A305F2C3?ngo-id=0302',
-        isRecommended: true,
-        details: 'This ~3-hour credential-earning course covers foundational cloud computing concepts, service models (IaaS, PaaS, SaaS), deployment strategies, security requirements, and real-world cloud solutions. Prepares you for further cloud certifications and offers a digital badge on completion.',
-        prerequisites: ['No prior experience required'],
-      },
       {
         id: 'cloud-intro',
         title: 'Introduction to Cloud Infrastructure: Describe Cloud Concepts',
@@ -953,25 +399,6 @@ export const COURSE_DATA: Category[] = [
 
         link: 'https://learn.microsoft.com/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/?WT.mc_id=academic&wt.mc_id=studentamb_490905',
         details: 'Explains IaaS, PaaS, SaaS models, and the benefits of cloud scalability and high availability.',
-        prerequisites: ['No prior experience required'],
-      },
-      {
-        id: 'fcc-relational-db',
-        title: 'Relational Databases Certification',
-        topics: [
-          'Relational Database Design',
-          'SQL',
-          'PostgreSQL',
-          'Normalization',
-          'Data Modeling',
-          'CRUD Operations',
-          'Advanced Queries (Joins, Aggregation)',
-          'Database Security',
-          'Real-World Projects'
-        ],
-        level: CourseLevel.Beginner,
-        link: 'https://www.freecodecamp.org/learn/relational-databases-v9/',
-        details: 'This hands-on certification teaches you how to design, query, and manage relational databases with SQL and PostgreSQL. Lessons progress from ER modeling and normalization basics to advanced query techniques, security, and project deployment. You build several real-world projects for portfolio proof and certification.',
         prerequisites: ['No prior experience required'],
       },
       {
@@ -1007,45 +434,6 @@ export const COURSE_DATA: Category[] = [
     description: 'Protect systems, networks, and programs from digital attacks using Microsoft Security solutions.',
     courses: [
       {
-        id: 'ibm-cybersecurity-intro',
-        title: 'Getting Started with Cybersecurity',
-        topics: [
-          'Cybersecurity Fundamentals',
-          'Key Elements & Threats',
-          'Data Privacy',
-          'CIA Triad Model',
-          'Security Evaluation',
-          'Cybersecurity Careers',
-          'Essential Skills for Cyber Roles',
-          'Intro to Security Tools'
-        ],
-        level: CourseLevel.Beginner,
-        link: 'https://skillsbuild.org/college-students/course-catalog/getting-started-with-cybersecurity',
-        isRecommended: true,
-        details: 'This course provides foundational knowledge of cybersecurity including data protection, privacy, security evaluation using the CIA triad, and current cyber threats. Learners explore skills required for cybersecurity jobs and understand fundamental tools. Completing the course earns an IBM digital badge via Credly.',
-        prerequisites: ['No prior experience required'],
-      },
-      {
-        id: 'ibm-cybersecurity-fund',
-        title: 'Cybersecurity Fundamentals',
-        topics: [
-          'Cybersecurity Concepts',
-          'Types of Attacks',
-          'Threat Groups',
-          'Risk Management',
-          'Cryptography',
-          'Social Engineering',
-          'Case Studies',
-          'Incident Response',
-          'Cybersecurity Careers'
-        ],
-        level: CourseLevel.Beginner,
-        link: 'https://skillsbuild.org/college-students/course-catalog/cybersecurity-fundamentals',
-        isRecommended: true,
-        details: 'A foundational program for understanding cybersecurity threats, strategies, and practices. Learn the landscape of digital threats, cryptographic protections, real-world attack cases, incident response frameworks, and job market landscape. The course includes hands-on evaluation of threats/scenarios and is designed for further upskilling or entry roles. Earn an IBM Digital Badge on completion.',
-        prerequisites: ['No prior experience required'],
-      },
-      {
         id: 'sc-900',
         title: 'Microsoft Security, Compliance, and Identity Fundamentals',
         topics: ['Security Concepts', 'Identity Management', 'Compliance', 'Microsoft Entra ID'],
@@ -1066,4 +454,5 @@ export const COURSE_DATA: Category[] = [
     ]
   }
 ];
+
 

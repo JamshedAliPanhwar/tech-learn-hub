@@ -59,10 +59,13 @@ const App: React.FC = () => {
       <header className="fixed top-0 left-0 right-0 z-40 bg-white/90 backdrop-blur-md border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 h-14 sm:h-16 flex items-center justify-between">
           <div className="flex items-center cursor-pointer shrink-0" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-            <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center text-white mr-2.5">
-              <BookOpen className="w-4 h-4 sm:w-5 sm:h-5" />
+            <div className="flex flex-wrap w-6 h-6 gap-0.5 mr-3">
+              <div className="w-[11px] h-[11px] bg-[#f25022]" />
+              <div className="w-[11px] h-[11px] bg-[#7fba00]" />
+              <div className="w-[11px] h-[11px] bg-[#00a4ef]" />
+              <div className="w-[11px] h-[11px] bg-[#ffb900]" />
             </div>
-            <h1 className="text-lg sm:text-xl font-bold text-slate-900 tracking-tight">Learn<span className="text-blue-600">Hub</span></h1>
+            <h1 className="text-lg sm:text-xl font-bold text-slate-900 tracking-tight">Microsoft Learn<span className="text-[#0078d4] font-normal">Hub</span></h1>
           </div>
 
           {/* Desktop Search */}
@@ -115,25 +118,12 @@ const App: React.FC = () => {
                   key={category.id}
                   onClick={() => scrollToSection(category.id)}
                   className={`w-full text-left px-3 py-2.5 rounded-lg text-sm font-medium flex items-center justify-between min-h-[44px] ${
-                    category.id === 'microsoft-learn'
-                      ? activeSection === category.id
-                        ? 'bg-[#0078d4]/10 text-[#005a9e]'
-                        : 'text-[#0078d4] hover:bg-[#0078d4]/8 font-semibold'
-                      : activeSection === category.id
-                        ? 'bg-blue-50 text-blue-700'
-                        : 'text-slate-600 hover:bg-slate-50'
+                    activeSection === category.id
+                      ? 'bg-[#0078d4]/10 text-[#005a9e]'
+                      : 'text-slate-600 hover:bg-[#0078d4]/8 font-semibold'
                   }`}
                 >
                   <span className="truncate pr-2">{category.title}</span>
-                  {category.id === 'recommended' && <Sparkles className="w-3 h-3 text-yellow-500 flex-shrink-0" />}
-                  {category.id === 'microsoft-learn' && (
-                    <span className="flex flex-wrap w-[10px] h-[10px] gap-[1px] flex-shrink-0">
-                      <span className="w-[4px] h-[4px] bg-[#f25022] rounded-[0.5px]" />
-                      <span className="w-[4px] h-[4px] bg-[#7fba00] rounded-[0.5px]" />
-                      <span className="w-[4px] h-[4px] bg-[#00a4ef] rounded-[0.5px]" />
-                      <span className="w-[4px] h-[4px] bg-[#ffb900] rounded-[0.5px]" />
-                    </span>
-                  )}
                 </button>
               ))}
             </nav>
@@ -156,35 +146,20 @@ const App: React.FC = () => {
                   key={category.id}
                   onClick={() => scrollToSection(category.id)}
                   className={`w-full text-left px-3 py-2 rounded-lg text-sm font-medium transition-colors flex items-center justify-between group ${
-                    category.id === 'microsoft-learn'
-                      ? activeSection === category.id
-                        ? 'bg-[#0078d4]/10 text-[#005a9e] shadow-sm ring-1 ring-[#0078d4]/30'
-                        : 'text-[#0078d4] hover:bg-[#0078d4]/8 hover:text-[#003a70] font-semibold'
-                      : activeSection === category.id
-                        ? 'bg-blue-50 text-blue-700 shadow-sm ring-1 ring-blue-200'
-                        : 'text-slate-600 hover:bg-slate-100 hover:text-slate-900'
+                    activeSection === category.id
+                      ? 'bg-[#0078d4]/10 text-[#005a9e] shadow-sm ring-1 ring-[#0078d4]/30'
+                      : 'text-slate-600 hover:bg-[#0078d4]/8 hover:text-[#003a70] font-semibold'
                   }`}
                 >
                   <span className="truncate">{category.title}</span>
-                  {category.id === 'recommended' && <Sparkles className="w-3 h-3 text-yellow-500" />}
-                  {category.id === 'microsoft-learn' && (
-                    <span className="flex gap-[2px] flex-shrink-0">
-                      <span className="flex flex-wrap w-[10px] h-[10px] gap-[1px]">
-                        <span className="w-[4px] h-[4px] bg-[#f25022] rounded-[0.5px]" />
-                        <span className="w-[4px] h-[4px] bg-[#7fba00] rounded-[0.5px]" />
-                        <span className="w-[4px] h-[4px] bg-[#00a4ef] rounded-[0.5px]" />
-                        <span className="w-[4px] h-[4px] bg-[#ffb900] rounded-[0.5px]" />
-                      </span>
-                    </span>
-                  )}
                 </button>
               ))}
             </nav>
 
             <div className="mt-8 p-4 bg-gradient-to-br from-slate-900 to-slate-800 rounded-xl text-white">
-              <h4 className="font-bold text-sm mb-2">Career Path?</h4>
+              <h4 className="font-bold text-sm mb-2">Microsoft Cloud Skills?</h4>
               <p className="text-xs text-slate-300 mb-3">
-                Start with the recommended courses.
+                Start with the recommended Azure paths.
               </p>
               <button
                 onClick={() => scrollToSection('recommended')}
@@ -210,17 +185,15 @@ const App: React.FC = () => {
                 {/* left: text */}
                 <div className="flex-1 text-center lg:text-left">
                   <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-blue-400 uppercase tracking-widest mb-3">
-                    <Sparkles className="w-3 h-3" /> Earn real certificates
+                    <Sparkles className="w-3 h-3" /> Master Microsoft Tech
                   </span>
                   <h2 className="text-2xl sm:text-3xl font-extrabold text-white leading-tight mb-3">
-                    Learn. Build.<br className="hidden sm:block" />
+                    Microsoft. Azure.<br className="hidden sm:block" />
                     <span className="text-blue-400"> Get Certified.</span>
                   </h2>
                   <p className="text-slate-400 text-sm leading-relaxed max-w-sm mx-auto lg:mx-0">
-                    Every course below leads to a recognized certificate from
-                    <span className="text-white font-medium"> IBM</span>,
-                    <span className="text-white font-medium"> Microsoft</span>,
-                    <span className="text-white font-medium"> freeCodeCamp</span> and more.
+                    Every course below leads to an officially recognized certification from
+                    <span className="text-white font-medium"> Microsoft</span>.
                   </p>
                   <button
                     onClick={() => scrollToSection('recommended')}
@@ -289,7 +262,7 @@ const App: React.FC = () => {
               </div>
             </div>
 
-            <p className="mt-2 text-slate-400">&copy; {new Date().getFullYear()} Learning Hub.</p>
+            <p className="mt-2 text-slate-400">&copy; {new Date().getFullYear()} MS Learning Hub.</p>
           </footer>
         </div>
       </main>
