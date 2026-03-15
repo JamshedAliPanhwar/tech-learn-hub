@@ -19,10 +19,11 @@ export const COURSE_DATA: Category[] = [
       },
       {
         id: 'web-start',
-        title: 'Get started with web development using Visual Studio Code',
+        title: 'Get started with web development using Visual Studio Code (HTML,CSS,JS)',
         topics: ['HTML', 'CSS', 'JavaScript', 'Web Development', 'Browser DevTools'],
         level: CourseLevel.Beginner,
         link: 'https://learn.microsoft.com/training/modules/get-started-with-web-development/?WT.mc_id=academic&wt.mc_id=studentamb_484680',
+                                                           
         details: 'Understand how the internet works and build your first static website using VS Code.',
         prerequisites: ['No prior experience required'],
         isRecommended: true
@@ -62,7 +63,7 @@ export const COURSE_DATA: Category[] = [
       },
       {
         id: 'ml-cert',
-        title: 'Microsoft Certified: Azure Data Scientist Associate',
+        title: 'Microsoft Certified: Microsoft Data Scientist Associate',
         topics: ['Data Science', 'ML Models', 'MLflow', 'Azure AI Services', 'Python'],
         level: CourseLevel.Intermediate,
         link: 'https://learn.microsoft.com/credentials/certifications/azure-data-scientist/?WT.mc_id=academic&wt.mc_id=studentamb_484680',
@@ -91,7 +92,7 @@ export const COURSE_DATA: Category[] = [
       },
       {
         id: 'ms-ai-900-path',
-        title: 'Azure AI Fundamentals (AI-900) Learning Path',
+        title: 'AI Fundamentals (AI-900) Learning Path',
         topics: ['AI Fundamentals', 'Machine Learning', 'Computer Vision', 'NLP', 'Generative AI', 'Azure AI Services'],
         level: CourseLevel.Beginner,
         link: 'https://learn.microsoft.com/en-us/training/paths/get-started-with-artificial-intelligence-on-azure/?WT.mc_id=academic&wt.mc_id=studentamb_484680',
@@ -135,7 +136,7 @@ export const COURSE_DATA: Category[] = [
       },
       {
         id: 'ms-ai-agents',
-        title: 'Get Started with AI Agent Development on Azure',
+        title: 'Get Started with AI Agent Development',
         topics: ['AI Agents', 'Azure AI Foundry', 'Semantic Kernel', 'AutoGen', 'Tool Use', 'Agentic Workflows'],
         level: CourseLevel.Beginner,
         link: 'https://learn.microsoft.com/en-us/training/modules/ai-agent-fundamentals/?WT.mc_id=academic&wt.mc_id=studentamb_484680',
@@ -146,7 +147,7 @@ export const COURSE_DATA: Category[] = [
       },
       {
         id: 'ms-foundry-sdk',
-        title: 'Develop an AI App with the Microsoft Foundry SDK',
+        title: 'Develop an AI App with the Microsoft',
         topics: ['Azure AI Foundry', 'AI App Development', 'LLMs', 'REST APIs', 'Prompt Flow', 'Deployment'],
         level: CourseLevel.Beginner,
         link: 'https://learn.microsoft.com/en-us/training/modules/ai-foundry-sdk/?WT.mc_id=academic&wt.mc_id=studentamb_490905',
@@ -168,7 +169,7 @@ export const COURSE_DATA: Category[] = [
       },
       {
         id: 'ms-ml-azure-path',
-        title: 'Create Machine Learning Models on Azure',
+        title: 'Create Machine Learning Models',
         topics: ['Azure Machine Learning', 'Training', 'MLflow', 'Automated ML', 'Pipelines', 'Model Deployment'],
         level: CourseLevel.Intermediate,
         link: 'https://learn.microsoft.com/en-us/training/paths/create-machine-learn-models/?WT.mc_id=academic&wt.mc_id=studentamb_490905',
@@ -201,7 +202,7 @@ export const COURSE_DATA: Category[] = [
       },
       {
         id: 'ms-responsible-ai',
-        title: 'Responsible Generative AI with Microsoft Foundry',
+        title: 'Responsible Generative AI',
         topics: ['Responsible AI', 'Content Safety', 'Bias Mitigation', 'AI Ethics', 'Evaluation', 'Azure AI Foundry'],
         level: CourseLevel.Intermediate,
         link: 'https://learn.microsoft.com/en-us/training/modules/responsible-ai-studio/?WT.mc_id=academic&wt.mc_id=studentamb_490905',
@@ -212,7 +213,7 @@ export const COURSE_DATA: Category[] = [
       },
       {
         id: 'ms-prepare-ai-dev',
-        title: 'Plan and Prepare to Develop AI Solutions on Azure',
+        title: 'Plan and Prepare to Develop AI Solutions',
         topics: ['Azure AI Services', 'AI Solution Architecture', 'Resource Planning', 'SDK Setup', 'Security', 'Monitoring'],
         level: CourseLevel.Beginner,
         link: 'https://learn.microsoft.com/en-us/training/modules/prepare-azure-ai-development/?WT.mc_id=academic&wt.mc_id=studentamb_484680',
@@ -225,7 +226,7 @@ export const COURSE_DATA: Category[] = [
   },
   {
     id: 'ai-genai',
-    title: 'Azure AI & Generative AI',
+    title: 'AI & Generative AI',
     description: 'Master the future of technology with courses on LLMs, Copilot, and Azure AI.',
     courses: [
       {

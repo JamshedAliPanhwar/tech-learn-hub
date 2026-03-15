@@ -171,7 +171,7 @@ export const CourseCard: React.FC<CourseCardProps> = ({ course }) => {
             rel="noopener noreferrer"
             className="mt-auto pt-4 flex items-center justify-center gap-2 w-full px-3 py-2.5 bg-[#0078d4] hover:bg-[#005a9e] active:bg-[#004578] text-white text-sm font-semibold rounded-lg transition-colors shadow-sm hover:shadow-md min-h-[44px]"
           >
-            <span className="text-center leading-tight">Open on Microsoft Learn</span>
+            <span className="text-center leading-tight">Start Course</span>
             <ExternalLink className="w-3.5 h-3.5 flex-shrink-0" />
           </a>
         )}

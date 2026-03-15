@@ -11,12 +11,8 @@ interface CertMeta {
 }
 
 const certs: CertMeta[] = [
-  { id: 'ms2', src: '/cert-ms-2.png', alt: 'Microsoft Azure Fundamentals Certificate', 
-    rotate: '-7deg',  translateX: '-62px', translateY: '14px',  zIndex: 1 },
-  { id: 'ms3', src: '/cert-ms-3.png', alt: 'Microsoft Azure AI Engineer Certificate', 
-    rotate:  '6deg',  translateX:  '62px', translateY: '20px',  zIndex: 2 },
   { id: 'ms',  src: '/cert-ms.png',  alt: 'Microsoft Certified Expert Certificate', 
-    rotate: '-1deg',  translateX:   '0px', translateY:  '0px',  zIndex: 3 },
+    rotate: '0deg',  translateX:   '0px', translateY:  '0px',  zIndex: 1 },
 ];
 
 export const CertificateShowcase: React.FC = () => {
