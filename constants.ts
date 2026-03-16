@@ -147,7 +147,7 @@ export const COURSE_DATA: Category[] = [
       },
       {
         id: 'ms-foundry-sdk',
-        title: 'Develop an AI App with the Microsoft',
+        title: 'Develop an AI App with Microsoft',
         topics: ['Azure AI Foundry', 'AI App Development', 'LLMs', 'REST APIs', 'Prompt Flow', 'Deployment'],
         level: CourseLevel.Beginner,
         link: 'https://learn.microsoft.com/en-us/training/modules/ai-foundry-sdk/?WT.mc_id=academic&wt.mc_id=studentamb_490905',
@@ -227,7 +227,7 @@ export const COURSE_DATA: Category[] = [
   {
     id: 'ai-genai',
     title: 'AI & Generative AI',
-    description: 'Master the future of technology with courses on LLMs, Copilot, and Azure AI.',
+    description: 'Master the future of technology with courses on LLMs, Copilot.',
     courses: [
       {
         id: 'ai-intro',
@@ -249,7 +249,7 @@ export const COURSE_DATA: Category[] = [
       },
       {
         id: 'ai-eng',
-        title: 'Microsoft Certified: Azure AI Engineer Associate',  //meeee
+        title: 'Microsoft Certified:AI Engineer Associate',  //meeee
         topics: ['Azure AI Services', 'NLP', 'Computer Vision', 'Generative AI', 'AI Solutions'],
         level: CourseLevel.Intermediate,
         link: 'https://learn.microsoft.com/credentials/certifications/azure-ai-engineer/?WT.mc_id=academic&wt.mc_id=studentamb_484680',
@@ -260,7 +260,7 @@ export const COURSE_DATA: Category[] = [
   },
   {
     id: 'machine-learning',
-    title: 'Azure Machine Learning',
+    title: 'Micorsoft Machine Learning',
     description: 'Build, train, and deploy models using Azure Machine Learning and Python.',
     courses: [
       {
@@ -293,7 +293,7 @@ export const COURSE_DATA: Category[] = [
       },
       {
         id: 'ml-cert',
-        title: 'Microsoft Certified: Azure Data Scientist Associate', //krim
+        title: 'Microsoft Certified: Data Scientist Associate', //krim
         topics: ['Data Science', 'ML Models', 'MLflow', 'Azure AI Services', 'Python'],
         level: CourseLevel.Intermediate,
         link: 'https://learn.microsoft.com/credentials/certifications/azure-data-scientist/?WT.mc_id=academic&wt.mc_id=studentamb_490905',
@@ -393,7 +393,7 @@ export const COURSE_DATA: Category[] = [
     courses: [
       {
         id: 'cloud-intro',
-        title: 'Introduction to Cloud Infrastructure: Describe Cloud Concepts',
+        title: 'Introduction to Cloud Infrastructure',
         topics: ['Cloud Computing', 'Shared Responsibility Model', 'Azure Basics'],
         level: CourseLevel.Beginner,
         isRecommended: true,     ///me
@@ -420,7 +420,7 @@ export const COURSE_DATA: Category[] = [
     courses: [
       {
         id: 'de-dp203',
-        title: 'Data Engineering on Microsoft Azure (DP-203T00)',
+        title: 'Data Engineering(DP-203T00)',
         topics: ['Data Engineering', 'Azure Synapse', 'Azure Databricks', 'Data Pipelines'],
         level: CourseLevel.Intermediate,
         link: 'https://learn.microsoft.com/training/courses/dp-203t00?WT.mc_id=academic&wt.mc_id=studentamb_484680',

@@ -22,8 +22,8 @@ export const CategorySection: React.FC<CategorySectionProps> = ({ category }) =>
   return (
     <section id={category.id} className="mb-10 scroll-mt-20">
       <div className="mb-5">
-        <h2 className="text-xl sm:text-2xl font-bold text-slate-900 mb-1 leading-snug">{category.title}</h2>
-        <p className="text-slate-500 text-sm">{category.description}</p>
+        <h2 className="text-xl sm:text-2xl font-bold text-slate-900 dark:text-blue-50 dark:text-blue-50 mb-1 leading-snug">{category.title}</h2>
+        <p className="text-slate-500 dark:text-slate-400 dark:text-slate-400 text-sm">{category.description}</p>
       </div>
       <div className="grid gap-3 sm:gap-4 grid-cols-1 sm:grid-cols-2 xl:grid-cols-3">
         {sortedCourses.map((course) => (
