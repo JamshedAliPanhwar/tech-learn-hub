@@ -1,6 +1,6 @@
 <div align="center">
 
-# Learn-hub-esi
+# Learn-hub-esi 
 
 A modern, interactive learning platform with curated courses for AI, ML, Web Dev, and more.
 
@@ -106,7 +106,11 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [Lucide Icons](https://lucide.dev/) for beautiful icons
 
 ---
+## 📌 Fork Notes
 
 <div align="center">
-Made with ❤️ for the developer community by Amine Gharout
+This project was **originally developed by Amine Gharout** ❤️.  
+I have forked it and made slight changes, including renaming it to **CourseNavigator Hub** and adding my own improvements.  
 </div>
+The original repository can be found here: [Learn-hub-esi](https://github.com/Amine-Gharout/Learn-hub-esi).
+
