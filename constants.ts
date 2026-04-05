@@ -11,30 +11,27 @@ export const COURSE_DATA: Category[] = [
         title: 'Introduction to Machine Learning Concepts',
         topics: ['ML Fundamentals', 'ML Types', 'Training/Evaluation', 'Deep Learning'],
         level: CourseLevel.Beginner,
-        link: 'https://learn.microsoft.com/training/modules/fundamentals-machine-learning/?WT.mc_id=academic&wt.mc_id=studentamb_484680',
+        link: 'https://learn.microsoft.com/training/modules/fundamentals-machine-learning/?WT.mc_id=academic&wt.mc_id=studentamb_508209',
         details: 'Understand the core principles of ML: Regression, Classification, and Clustering, and how to evaluate models.',
         prerequisites: ['Basic Math'],
         isRecommended: true,
-
       },
       {
         id: 'web-start',
         title: 'Get started with web development using Visual Studio Code (HTML,CSS,JS)',
         topics: ['HTML', 'CSS', 'JavaScript', 'Web Development', 'Browser DevTools'],
         level: CourseLevel.Beginner,
-        link: 'https://learn.microsoft.com/training/modules/get-started-with-web-development/?WT.mc_id=academic&wt.mc_id=studentamb_484680',
-                                                           
+        link: 'https://learn.microsoft.com/training/modules/get-started-with-web-development/?WT.mc_id=academic&wt.mc_id=studentamb_508209',
         details: 'Understand how the internet works and build your first static website using VS Code.',
         prerequisites: ['No prior experience required'],
         isRecommended: true
-
       },
       {
         id: 'rec-genai-intro',
         title: 'Introduction to Generative AI and Agents',
         topics: ['Generative AI', 'LLMs', 'Prompting', 'AI Agents', 'Agentic AI'],
         level: CourseLevel.Beginner,
-        link: 'https://learn.microsoft.com/training/modules/fundamentals-generative-ai/?WT.mc_id=academic&wt.mc_id=studentamb_490905',
+        link: 'https://learn.microsoft.com/training/modules/fundamentals-generative-ai/?WT.mc_id=academic&wt.mc_id=studentamb_508209',
         isRecommended: true,
         details: 'Understand how Large Language Models (LLMs) work, how to craft effective prompts, and the emerging field of autonomous AI agents.',
         prerequisites: ['No prior experience required'],
@@ -44,33 +41,30 @@ export const COURSE_DATA: Category[] = [
         title: 'Introduction to Cloud Infrastructure: Describe Cloud Concepts',
         topics: ['Cloud Computing', 'Shared Responsibility Model', 'Azure Basics'],
         level: CourseLevel.Beginner,
-        link: 'https://learn.microsoft.com/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/?WT.mc_id=academic&wt.mc_id=studentamb_490905',
+        link: 'https://learn.microsoft.com/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/?WT.mc_id=academic&wt.mc_id=studentamb_508209',
         details: 'Explains IaaS, PaaS, SaaS models, and the benefits of cloud scalability and high availability.',
         prerequisites: ['No prior experience required'],
         isRecommended: true,
-
       },
       {
         id: 'py-vscode',
         title: 'Getting Started with Python in VS Code',
         topics: ['Python Setup', 'VS Code', 'Debugging', 'Virtual Environments'],
         level: CourseLevel.Beginner,
-        link: 'https://learn.microsoft.com/shows/visual-studio-code/getting-started-with-python-in-vs-code-official-video?WT.mc_id=academic&wt.mc_id=studentamb_490905',
+        link: 'https://learn.microsoft.com/shows/visual-studio-code/getting-started-with-python-in-vs-code-official-video?WT.mc_id=academic&wt.mc_id=studentamb_508209',
         details: 'Learn to use the Python extension for VS Code, including linting, formatting, and running Jupyter notebooks.',
         prerequisites: ['No prior experience required'],
         isRecommended: true,
-
       },
       {
         id: 'ml-cert',
         title: 'Microsoft Certified: Microsoft Data Scientist Associate',
         topics: ['Data Science', 'ML Models', 'MLflow', 'Azure AI Services', 'Python'],
         level: CourseLevel.Intermediate,
-        link: 'https://learn.microsoft.com/credentials/certifications/azure-data-scientist/?WT.mc_id=academic&wt.mc_id=studentamb_484680',
+        link: 'https://learn.microsoft.com/credentials/certifications/azure-data-scientist/?WT.mc_id=academic&wt.mc_id=studentamb_508209',
         details: 'Certification path for data scientists applying their knowledge of data exploration and model training on Azure.',
         prerequisites: ['DP-100 Skills'],
         isRecommended: true,
-
       },
     ]
   },
@@ -84,10 +78,10 @@ export const COURSE_DATA: Category[] = [
         title: 'Microsoft Azure Fundamentals (AZ-900)',
         topics: ['Azure Fundamentals', 'Cloud Concepts', 'Azure Services', 'Security', 'Compliance', 'Cost Management'],
         level: CourseLevel.Beginner,
-        link: 'https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/?WT.mc_id=academic&wt.mc_id=studentamb_490905',
+        link: 'https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/?WT.mc_id=academic&wt.mc_id=studentamb_508209',
         isRecommended: true,
         isMicrosoft: true,
-        details: 'The most popular cloud certification for beginners. Validates core Azure knowledge including cloud concepts, services, security, and pricing. Industry-recognized and globally respected by employers. Free learning path included.',
+        details: 'The most popular cloud certification for beginners. Validates core Azure knowledge including cloud concepts, services, security, and pricing.',
         prerequisites: ['No prior experience required'],
       },
       {
@@ -95,10 +89,10 @@ export const COURSE_DATA: Category[] = [
         title: 'AI Fundamentals (AI-900) Learning Path',
         topics: ['AI Fundamentals', 'Machine Learning', 'Computer Vision', 'NLP', 'Generative AI', 'Azure AI Services'],
         level: CourseLevel.Beginner,
-        link: 'https://learn.microsoft.com/en-us/training/paths/get-started-with-artificial-intelligence-on-azure/?WT.mc_id=academic&wt.mc_id=studentamb_484680',
+        link: 'https://learn.microsoft.com/en-us/training/paths/get-started-with-artificial-intelligence-on-azure/?WT.mc_id=academic&wt.mc_id=studentamb_508209',
         isRecommended: true,
         isMicrosoft: true,
-        details: 'The official Microsoft Learning Path for the AI-900 exam. Covers machine learning, computer vision, NLP, generative AI, and responsible AI. Free, self-paced, and earns a globally recognized certification upon exam completion.',
+        details: 'The official Microsoft Learning Path for the AI-900 exam.',
         prerequisites: ['No prior experience required'],
       },
       {
@@ -106,10 +100,10 @@ export const COURSE_DATA: Category[] = [
         title: 'Python for Beginners',
         topics: ['Python Basics', 'Variables', 'Functions', 'Lists', 'Loops', 'VS Code', 'Modules'],
         level: CourseLevel.Beginner,
-        link: 'https://learn.microsoft.com/en-us/training/paths/beginner-python/?WT.mc_id=academic&wt.mc_id=studentamb_484680',
+        link: 'https://learn.microsoft.com/en-us/training/paths/beginner-python/?WT.mc_id=academic&wt.mc_id=studentamb_508209',
         isRecommended: true,
         isMicrosoft: true,
-        details: 'Microsoft\'s official beginner Python path featuring short video lessons and hands-on exercises. Covers all Python essentials: variables, data types, lists, loops, functions, and file I/O—ideal for first-time coders.',
+        details: 'Microsoft\'s official beginner Python path featuring short video lessons.',
         prerequisites: ['No prior experience required'],
       },
       {
@@ -117,10 +111,10 @@ export const COURSE_DATA: Category[] = [
         title: 'Introduction to GitHub Copilot',
         topics: ['GitHub Copilot', 'AI Pair Programming', 'Code Generation', 'VS Code', 'Productivity', 'Testing'],
         level: CourseLevel.Beginner,
-        link: 'https://learn.microsoft.com/en-us/training/modules/introduction-to-github-copilot/?WT.mc_id=academic&wt.mc_id=studentamb_484680',
+        link: 'https://learn.microsoft.com/en-us/training/modules/introduction-to-github-copilot/?WT.mc_id=academic&wt.mc_id=studentamb_508209',
         isRecommended: true,
         isMicrosoft: true,
-        details: 'Learn how GitHub Copilot (by Microsoft/GitHub) uses AI to generate code, write tests, explain logic, and automate repetitive tasks. Boost development speed from day one across any language in VS Code.',
+        details: 'Learn how GitHub Copilot uses AI to generate code.',
         prerequisites: ['Basic programming knowledge'],
       },
       {
@@ -128,10 +122,10 @@ export const COURSE_DATA: Category[] = [
         title: 'Build JavaScript Applications with TypeScript',
         topics: ['TypeScript', 'Static Types', 'Interfaces', 'Generics', 'Enums', 'Modules', 'Decorators'],
         level: CourseLevel.Intermediate,
-        link: 'https://learn.microsoft.com/en-us/training/paths/build-javascript-applications-typescript/?WT.mc_id=academic&wt.mc_id=studentamb_490905',
+        link: 'https://learn.microsoft.com/en-us/training/paths/build-javascript-applications-typescript/?WT.mc_id=academic&wt.mc_id=studentamb_508209',
         isRecommended: true,
         isMicrosoft: true,
-        details: 'Master TypeScript—Microsoft\'s own language that adds static typing to JavaScript. Learn interfaces, generics, enums, modules, and type safety to write robust, large-scale applications.',
+        details: 'Master TypeScript—Microsoft\'s own language that adds static typing to JavaScript.',
         prerequisites: ['JavaScript Basics'],
       },
       {
@@ -139,10 +133,10 @@ export const COURSE_DATA: Category[] = [
         title: 'Get Started with AI Agent Development',
         topics: ['AI Agents', 'Azure AI Foundry', 'Semantic Kernel', 'AutoGen', 'Tool Use', 'Agentic Workflows'],
         level: CourseLevel.Beginner,
-        link: 'https://learn.microsoft.com/en-us/training/modules/ai-agent-fundamentals/?WT.mc_id=academic&wt.mc_id=studentamb_484680',
+        link: 'https://learn.microsoft.com/en-us/training/modules/ai-agent-fundamentals/?WT.mc_id=academic&wt.mc_id=studentamb_508209',
         isRecommended: true,
         isMicrosoft: true,
-        details: 'Understand what AI agents are and how to build them on Azure. Covers Semantic Kernel, AutoGen, Azure AI Agent Service, multi-agent patterns, tool integration, and deployment best practices.',
+        details: 'Understand what AI agents are and how to build them on Azure.',
         prerequisites: ['Basic Python', 'Generative AI Concepts'],
       },
       {
@@ -150,10 +144,10 @@ export const COURSE_DATA: Category[] = [
         title: 'Develop an AI App with Microsoft',
         topics: ['Azure AI Foundry', 'AI App Development', 'LLMs', 'REST APIs', 'Prompt Flow', 'Deployment'],
         level: CourseLevel.Beginner,
-        link: 'https://learn.microsoft.com/en-us/training/modules/ai-foundry-sdk/?WT.mc_id=academic&wt.mc_id=studentamb_490905',
+        link: 'https://learn.microsoft.com/en-us/training/modules/ai-foundry-sdk/?WT.mc_id=academic&wt.mc_id=studentamb_508209',
         isRecommended: true,
         isMicrosoft: true,
-        details: 'Build fully functional AI applications using the Azure AI Foundry SDK. Deploy LLMs, manage prompts, call AI APIs, and monitor your app end-to-end—complete with hands-on Azure exercises.',
+        details: 'Build fully functional AI applications using the Azure AI Foundry SDK.',
         prerequisites: ['Python Basics'],
       },
       {
@@ -161,10 +155,10 @@ export const COURSE_DATA: Category[] = [
         title: 'C# Foundations for Absolute Beginners',
         topics: ['C# Syntax', 'Variables', 'Methods', 'OOP', 'Console Apps', '.NET', 'Debugging'],
         level: CourseLevel.Beginner,
-        link: 'https://learn.microsoft.com/en-us/training/paths/get-started-c-sharp-part-1/?WT.mc_id=academic&wt.mc_id=studentamb_484680',
+        link: 'https://learn.microsoft.com/en-us/training/paths/get-started-c-sharp-part-1/?WT.mc_id=academic&wt.mc_id=studentamb_508209',
         isRecommended: true,
         isMicrosoft: true,
-        details: 'Start from zero with C# and .NET. Microsoft\'s official path teaches variables, data types, control flow, methods, and OOP principles with interactive browser-based coding exercises—no setup required.',
+        details: 'Start from zero with C# and .NET.',
         prerequisites: ['No prior experience required'],
       },
       {
@@ -172,10 +166,10 @@ export const COURSE_DATA: Category[] = [
         title: 'Create Machine Learning Models',
         topics: ['Azure Machine Learning', 'Training', 'MLflow', 'Automated ML', 'Pipelines', 'Model Deployment'],
         level: CourseLevel.Intermediate,
-        link: 'https://learn.microsoft.com/en-us/training/paths/create-machine-learn-models/?WT.mc_id=academic&wt.mc_id=studentamb_490905',
+        link: 'https://learn.microsoft.com/en-us/training/paths/create-machine-learn-models/?WT.mc_id=academic&wt.mc_id=studentamb_508209',
         isRecommended: true,
         isMicrosoft: true,
-        details: 'End-to-end path for building, training, evaluating, and deploying ML models using Azure Machine Learning. Covers Automated ML, MLflow experiment tracking, and pipeline orchestration.',
+        details: 'End-to-end path for building, training, evaluating, and deploying ML models.',
         prerequisites: ['Python', 'Basic ML Concepts'],
       },
       {
@@ -183,10 +177,10 @@ export const COURSE_DATA: Category[] = [
         title: 'Get Started Building with Power BI',
         topics: ['Power BI Desktop', 'Data Visualization', 'Reports', 'Dashboards', 'DAX', 'Data Modeling'],
         level: CourseLevel.Beginner,
-        link: 'https://learn.microsoft.com/en-us/training/modules/get-started-with-power-bi/?WT.mc_id=academic&wt.mc_id=studentamb_484680',
+        link: 'https://learn.microsoft.com/en-us/training/modules/get-started-with-power-bi/?WT.mc_id=academic&wt.mc_id=studentamb_508209',
         isRecommended: true,
         isMicrosoft: true,
-        details: 'Learn to create interactive charts, reports, and dashboards with Power BI Desktop. Understand the full data workflow from import to insight sharing—the #1 BI tool used by enterprises worldwide.',
+        details: 'Learn to create interactive charts, reports, and dashboards.',
         prerequisites: ['No prior experience required'],
       },
       {
@@ -194,10 +188,10 @@ export const COURSE_DATA: Category[] = [
         title: 'Evolve Your DevOps Practices',
         topics: ['DevOps', 'Azure DevOps', 'CI/CD', 'Git', 'GitHub Actions', 'Agile', 'Automation'],
         level: CourseLevel.Beginner,
-        link: 'https://learn.microsoft.com/en-us/training/paths/evolve-your-devops-practices/?WT.mc_id=academic&wt.mc_id=studentamb_490905',
+        link: 'https://learn.microsoft.com/en-us/training/paths/evolve-your-devops-practices/?WT.mc_id=academic&wt.mc_id=studentamb_508209',
         isRecommended: true,
         isMicrosoft: true,
-        details: 'Understand DevOps culture and implement it with Azure DevOps. Covers version control with Git, build/release pipelines, CI/CD automation, and agile planning boards.',
+        details: 'Understand DevOps culture and implement it with Azure DevOps.',
         prerequisites: ['Basic programming knowledge'],
       },
       {
@@ -205,10 +199,10 @@ export const COURSE_DATA: Category[] = [
         title: 'Responsible Generative AI',
         topics: ['Responsible AI', 'Content Safety', 'Bias Mitigation', 'AI Ethics', 'Evaluation', 'Azure AI Foundry'],
         level: CourseLevel.Intermediate,
-        link: 'https://learn.microsoft.com/en-us/training/modules/responsible-ai-studio/?WT.mc_id=academic&wt.mc_id=studentamb_490905',
+        link: 'https://learn.microsoft.com/en-us/training/modules/responsible-ai-studio/?WT.mc_id=academic&wt.mc_id=studentamb_508209',
         isRecommended: true,
         isMicrosoft: true,
-        details: 'Learn to build and deploy responsible generative AI using Azure AI Foundry. Covers content filtering, bias detection, evaluation frameworks, and Microsoft\'s Responsible AI Standard—crucial for production AI.',
+        details: 'Learn to build and deploy responsible generative AI.',
         prerequisites: ['Basic Generative AI Knowledge'],
       },
       {
@@ -216,10 +210,10 @@ export const COURSE_DATA: Category[] = [
         title: 'Plan and Prepare to Develop AI Solutions',
         topics: ['Azure AI Services', 'AI Solution Architecture', 'Resource Planning', 'SDK Setup', 'Security', 'Monitoring'],
         level: CourseLevel.Beginner,
-        link: 'https://learn.microsoft.com/en-us/training/modules/prepare-azure-ai-development/?WT.mc_id=academic&wt.mc_id=studentamb_484680',
+        link: 'https://learn.microsoft.com/en-us/training/modules/prepare-azure-ai-development/?WT.mc_id=academic&wt.mc_id=studentamb_508209',
         isRecommended: true,
         isMicrosoft: true,
-        details: 'The essential first step before building any Azure AI solution. Covers resource provisioning, SDK configuration, authentication, cost estimation, and monitoring setup for Azure AI projects.',
+        details: 'The essential first step before building any Azure AI solution.',
         prerequisites: ['Azure Basics'],
       },
     ],
@@ -231,29 +225,29 @@ export const COURSE_DATA: Category[] = [
     courses: [
       {
         id: 'ai-intro',
-        title: 'Introduction to AI',         // meeeeeeeeeeeeeee
+        title: 'Introduction to AI',
         topics: ['AI Concepts', 'Machine Learning', 'Azure Services', 'AI Solutions'],
         level: CourseLevel.Beginner,
-        link: 'https://learn.microsoft.com/training/paths/introduction-to-ai-on-azure/?WT.mc_id=academic&wt.mc_id=studentamb_484680',
-        details: 'Get started with Artificial Intelligence on Azure. Learn about Computer Vision, NLP, and Document Intelligence services.',
+        link: 'https://learn.microsoft.com/training/paths/introduction-to-ai-on-azure/?WT.mc_id=academic&wt.mc_id=studentamb_508209',
+        details: 'Get started with Artificial Intelligence on Azure.',
         prerequisites: ['No prior experience required'],
       },
       {
         id: 'ai-genai-intro',
-        title: 'Introduction to Generative AI and Agents', ///////kkkkriiiim
+        title: 'Introduction to Generative AI and Agents',
         topics: ['Generative AI', 'LLMs', 'Prompting', 'AI Agents', 'Agentic AI'],
         level: CourseLevel.Beginner,
-        link: 'https://learn.microsoft.com/training/modules/fundamentals-generative-ai/?WT.mc_id=academic&wt.mc_id=studentamb_490905',
-        details: 'Explore the fundamentals of Generative AI, including how models are trained and how to use them responsibly.',
+        link: 'https://learn.microsoft.com/training/modules/fundamentals-generative-ai/?WT.mc_id=academic&wt.mc_id=studentamb_508209',
+        details: 'Explore the fundamentals of Generative AI.',
         prerequisites: ['No prior experience required'],
       },
       {
         id: 'ai-eng',
-        title: 'Microsoft Certified:AI Engineer Associate',  //meeee
+        title: 'Microsoft Certified:AI Engineer Associate',
         topics: ['Azure AI Services', 'NLP', 'Computer Vision', 'Generative AI', 'AI Solutions'],
         level: CourseLevel.Intermediate,
-        link: 'https://learn.microsoft.com/credentials/certifications/azure-ai-engineer/?WT.mc_id=academic&wt.mc_id=studentamb_484680',
-        details: 'The official certification page. Validates your ability to build, manage, and deploy AI solutions.',
+        link: 'https://learn.microsoft.com/credentials/certifications/azure-ai-engineer/?WT.mc_id=academic&wt.mc_id=studentamb_508209',
+        details: 'The official certification page.',
         prerequisites: ['AI-102 Skills', 'Experience with Azure'],
       }
     ]
@@ -265,39 +259,39 @@ export const COURSE_DATA: Category[] = [
     courses: [
       {
         id: 'ml-concepts',
-        title: 'Introduction to Machine Learning Concepts',   //meeeeeeeee
+        title: 'Introduction to Machine Learning Concepts',
         topics: ['ML Fundamentals', 'ML Types', 'Training/Evaluation', 'Deep Learning'],
         level: CourseLevel.Beginner,
-        link: 'https://learn.microsoft.com/training/modules/fundamentals-machine-learning/?WT.mc_id=academic&wt.mc_id=studentamb_484680',
-        details: 'Understand the core principles of ML: Regression, Classification, and Clustering, and how to evaluate models.',
+        link: 'https://learn.microsoft.com/training/modules/fundamentals-machine-learning/?WT.mc_id=academic&wt.mc_id=studentamb_508209',
+        details: 'Understand the core principles of ML.',
         prerequisites: ['Basic Math'],
         isRecommended: true,
       },
       {
-        id: 'ml-create',                            //krim
+        id: 'ml-create',
         title: 'Create Machine Learning Models',
         topics: ['Regression', 'Classification', 'Clustering', 'Deep Learning'],
         level: CourseLevel.Intermediate,
-        link: 'https://learn.microsoft.com/training/paths/create-machine-learn-models/?WT.mc_id=academic&wt.mc_id=studentamb_490905',
-        details: 'Hands-on labs using Python to train models with Scikit-Learn and PyTorch within the Azure environment.',
+        link: 'https://learn.microsoft.com/training/paths/create-machine-learn-models/?WT.mc_id=academic&wt.mc_id=studentamb_508209',
+        details: 'Hands-on labs using Python to train models.',
         prerequisites: ['Python', 'Basic ML Concepts'],
       },
       {
         id: 'ml-pipeline',
-        title: 'Run pipelines in Azure Machine Learning',//amine
+        title: 'Run pipelines in Azure Machine Learning',
         topics: ['ML Pipelines', 'Automation', 'Components', 'Workflow Orchestration'],
         level: CourseLevel.Beginner,
-        link: 'https://learn.microsoft.com/training/modules/run-pipelines-azure-machine-learning/?WT.mc_id=academic&wt.mc_id=studentamb_484680',
-        details: 'Automate your workflows by connecting data prep, training, and evaluation steps into reproducible pipelines.',
+        link: 'https://learn.microsoft.com/training/modules/run-pipelines-azure-machine-learning/?WT.mc_id=academic&wt.mc_id=studentamb_508209',
+        details: 'Automate your workflows by connecting data prep.',
         prerequisites: ['Azure ML Workspace'],
       },
       {
         id: 'ml-cert',
-        title: 'Microsoft Certified: Data Scientist Associate', //krim
+        title: 'Microsoft Certified: Data Scientist Associate',
         topics: ['Data Science', 'ML Models', 'MLflow', 'Azure AI Services', 'Python'],
         level: CourseLevel.Intermediate,
-        link: 'https://learn.microsoft.com/credentials/certifications/azure-data-scientist/?WT.mc_id=academic&wt.mc_id=studentamb_490905',
-        details: 'Certification path for data scientists applying their knowledge of data exploration and model training on Azure.',
+        link: 'https://learn.microsoft.com/credentials/certifications/azure-data-scientist/?WT.mc_id=academic&wt.mc_id=studentamb_508209',
+        details: 'Certification path for data scientists.',
         prerequisites: ['DP-100 Skills'],
       }
     ]
@@ -309,38 +303,38 @@ export const COURSE_DATA: Category[] = [
     courses: [
       {
         id: 'py-analyze',
-        title: 'Explore and analyze data with Python',            //me
+        title: 'Explore and analyze data with Python',
         topics: ['Data Exploration', 'NumPy', 'Pandas', 'Matplotlib', 'Data Analysis'],
         level: CourseLevel.Intermediate,
-        link: 'https://learn.microsoft.com/training/modules/explore-analyze-data-with-python/?WT.mc_id=academic&wt.mc_id=studentamb_484680',
-        details: 'Use Jupyter notebooks to manipulate large datasets and create visualizations for storytelling.',
+        link: 'https://learn.microsoft.com/training/modules/explore-analyze-data-with-python/?WT.mc_id=academic&wt.mc_id=studentamb_508209',
+        details: 'Use Jupyter notebooks to manipulate large datasets.',
         prerequisites: ['Python Syntax'],
       },
       {
         id: 'py-vs',
-        title: 'Python Development with Visual Studio',//kr
+        title: 'Python Development with Visual Studio',
         topics: ['Python Development', 'Visual Studio IDE', 'Python Apps', 'Debugging'],
         level: CourseLevel.Beginner,
-        link: 'https://learn.microsoft.com/visualstudio/python/?view=visualstudio?WT.mc_id=academic&wt.mc_id=studentamb_490905',
-        details: 'Set up Visual Studio 2022 for Python development, including environment management and debugging tools.',
+        link: 'https://learn.microsoft.com/visualstudio/python/?view=visualstudio?WT.mc_id=academic&wt.mc_id=studentamb_508209',
+        details: 'Set up Visual Studio 2022 for Python development.',
         prerequisites: ['No prior experience required'],
       },
       {
-        id: 'py-copilot',  //me
+        id: 'py-copilot',
         title: 'Using GitHub Copilot with Python',
         topics: ['GitHub Copilot', 'AI Pair Programming', 'Python Development'],
         level: CourseLevel.Beginner,
-        link: 'https://learn.microsoft.com/training/modules/introduction-copilot-python/?WT.mc_id=academic&wt.mc_id=studentamb_484680',
-        details: 'Boost productivity by using AI to generate code snippets, write tests, and explain complex logic.',
+        link: 'https://learn.microsoft.com/training/modules/introduction-copilot-python/?WT.mc_id=academic&wt.mc_id=studentamb_508209',
+        details: 'Boost productivity by using AI to generate code snippets.',
         prerequisites: ['Basic Coding Knowledge'],
       },
       {
-        id: 'py-apps',//kr
+        id: 'py-apps',
         title: 'Build intelligent apps with Python',
         topics: ['Python', 'Azure', 'Cloud Computing', 'Intelligent Applications'],
         level: CourseLevel.Beginner,
-        link: 'https://learn.microsoft.com/shows/azure-essentials-show/build-intelligent-apps-with-python?WT.mc_id=academic&wt.mc_id=studentamb_490905',
-        details: 'Video series on integrating Azure AI services and databases into your Python web applications.',
+        link: 'https://learn.microsoft.com/shows/azure-essentials-show/build-intelligent-apps-with-python?WT.mc_id=academic&wt.mc_id=studentamb_508209',
+        details: 'Video series on integrating Azure AI services.',
         prerequisites: ['Web Dev Basics', 'Python'],
       }
     ]
@@ -351,21 +345,21 @@ export const COURSE_DATA: Category[] = [
     description: 'Modern web technologies including React, Node.js, and ASP.NET Core.',
     courses: [
       {
-        id: 'web-start',       ///krrr
+        id: 'web-start',
         title: 'Get started with web development using Visual Studio Code',
         topics: ['HTML', 'CSS', 'JavaScript', 'Web Development', 'Browser DevTools'],
         level: CourseLevel.Beginner,
-        link: 'https://learn.microsoft.com/training/modules/get-started-with-web-development/?WT.mc_id=academic&wt.mc_id=studentamb_484680',
-        details: 'Understand how the internet works and build your first static website using VS Code.',
+        link: 'https://learn.microsoft.com/training/modules/get-started-with-web-development/?WT.mc_id=academic&wt.mc_id=studentamb_508209',
+        details: 'Build your first static website using VS Code.',
         prerequisites: ['No prior experience required'],
       },
       {
         id: 'web-html',
-        title: 'Build web pages with HTML and CSS for beginners',      //meee
+        title: 'Build web pages with HTML and CSS for beginners',
         topics: ['HTML', 'CSS', 'Web Pages', 'VS Code', 'Web Accessibility'],
         level: CourseLevel.Beginner,
-        link: 'https://learn.microsoft.com/training/paths/build-web-pages-html-css-for-beginners/?WT.mc_id=academic&wt.mc_id=studentamb_484680',
-        details: 'Deep dive into semantic HTML tags, CSS styling, layout techniques, and accessibility best practices.',
+        link: 'https://learn.microsoft.com/training/paths/build-web-pages-html-css-for-beginners/?WT.mc_id=academic&wt.mc_id=studentamb_508209',
+        details: 'Deep dive into semantic HTML tags and CSS styling.',
         prerequisites: ['No prior experience required'],
       },
     ]
@@ -376,19 +370,19 @@ export const COURSE_DATA: Category[] = [
     description: 'Core fundamentals for building robust applications on the .NET platform.',
     courses: [
       {
-        id: 'cs-write',           //ee
+        id: 'cs-write',
         title: 'Write your first C# code',
         topics: ['C# Basics', 'Console Applications', 'Syntax', 'First Code'],
         level: CourseLevel.Beginner,
-        link: 'https://learn.microsoft.com/training/modules/csharp-write-first/?WT.mc_id=academic&wt.mc_id=studentamb_490905',
-        details: 'Focuses on syntax precision, compilation, and understanding the .NET runtime environment.',
+        link: 'https://learn.microsoft.com/training/modules/csharp-write-first/?WT.mc_id=academic&wt.mc_id=studentamb_508209',
+        details: 'Focuses on syntax precision and compilation.',
         prerequisites: ['No prior experience required'],
       },
     ]
   },
   {
     id: 'cloud',
-    title: 'Azure Cloud Computing',   //
+    title: 'Azure Cloud Computing',
     description: 'Essential knowledge for cloud computing and infrastructure.',
     courses: [
       {
@@ -396,10 +390,9 @@ export const COURSE_DATA: Category[] = [
         title: 'Introduction to Cloud Infrastructure',
         topics: ['Cloud Computing', 'Shared Responsibility Model', 'Azure Basics'],
         level: CourseLevel.Beginner,
-        isRecommended: true,     ///me
-
-        link: 'https://learn.microsoft.com/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/?WT.mc_id=academic&wt.mc_id=studentamb_490905',
-        details: 'Explains IaaS, PaaS, SaaS models, and the benefits of cloud scalability and high availability.',
+        isRecommended: true,
+        link: 'https://learn.microsoft.com/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/?WT.mc_id=academic&wt.mc_id=studentamb_508209',
+        details: 'Explains IaaS, PaaS, SaaS models.',
         prerequisites: ['No prior experience required'],
       },
       {
@@ -407,8 +400,8 @@ export const COURSE_DATA: Category[] = [
         title: 'Microsoft Azure Fundamentals (AZ-900)',
         topics: ['Azure Fundamentals', 'Cloud Services', 'Certification Prep'],
         level: CourseLevel.Beginner,
-        link: 'https://learn.microsoft.com/credentials/certifications/resources/study-guides/az-900?WT.mc_id=academic&wt.mc_id=studentamb_490905',
-        details: 'Study guide for the AZ-900 exam. Covers identity, governance, security, and cost management on Azure.',
+        link: 'https://learn.microsoft.com/credentials/certifications/resources/study-guides/az-900?WT.mc_id=academic&wt.mc_id=studentamb_508209',
+        details: 'Study guide for the AZ-900 exam.',
         prerequisites: ['No prior experience required'],
       },
     ]
@@ -423,8 +416,8 @@ export const COURSE_DATA: Category[] = [
         title: 'Data Engineering(DP-203T00)',
         topics: ['Data Engineering', 'Azure Synapse', 'Azure Databricks', 'Data Pipelines'],
         level: CourseLevel.Intermediate,
-        link: 'https://learn.microsoft.com/training/courses/dp-203t00?WT.mc_id=academic&wt.mc_id=studentamb_484680',
-        details: 'Design and implement data storage, processing, and security using Azure Synapse Analytics and Databricks.',
+        link: 'https://learn.microsoft.com/training/courses/dp-203t00?WT.mc_id=academic&wt.mc_id=studentamb_508209',
+        details: 'Design and implement data storage using Azure Synapse.',
         prerequisites: ['SQL', 'Python/Scala', 'Azure Fundamentals'],
       }
     ]
@@ -438,22 +431,20 @@ export const COURSE_DATA: Category[] = [
         id: 'sc-900',
         title: 'Microsoft Security, Compliance, and Identity Fundamentals',
         topics: ['Security Concepts', 'Identity Management', 'Compliance', 'Microsoft Entra ID'],
-        level: CourseLevel.Beginner,   //nekk
-        link: 'https://learn.microsoft.com/credentials/certifications/security-compliance-and-identity-fundamentals/?WT.mc_id=academic&wt.mc_id=studentamb_484680',
-        details: 'Learn the fundamentals of security, compliance, and identity (SCI) across cloud-based and related Microsoft services.',
+        level: CourseLevel.Beginner,
+        link: 'https://learn.microsoft.com/credentials/certifications/security-compliance-and-identity-fundamentals/?WT.mc_id=academic&wt.mc_id=studentamb_508209',
+        details: 'Learn the fundamentals of security, compliance, and identity.',
         prerequisites: ['No prior experience required'],
       },
       {
         id: 'sc-200',
-        title: 'Microsoft Security Operations Anaflyst',
+        title: 'Microsoft Security Operations Analyst',
         topics: ['Threat Protection', 'Microsoft Sentinel', 'Defender for Cloud', 'KQL'],
-        level: CourseLevel.Intermediate, //krim
-        link: 'https://learn.microsoft.com/credentials/certifications/security-operations-analyst/?WT.mc_id=academic&wt.mc_id=studentamb_490905',
-        details: 'Learn to mitigate threats using Microsoft Sentinel, Microsoft Defender for Cloud, and Microsoft 365 Defender.',
+        level: CourseLevel.Intermediate,
+        link: 'https://learn.microsoft.com/credentials/certifications/security-operations-analyst/?WT.mc_id=academic&wt.mc_id=studentamb_508209',
+        details: 'Learn to mitigate threats using Microsoft Sentinel.',
         prerequisites: ['SC-900 Skills', 'Basic Scripting'],
       }
     ]
   }
 ];
-
-
