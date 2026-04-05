@@ -2,14 +2,13 @@ import React, { useState, useEffect } from 'react';
 import { COURSE_DATA } from './constants';
 import { CategorySection } from './components/CategorySection';
 import { CertificateShowcase } from './components/CertificateShowcase';
-import { Search, Menu, X, Github, BookOpen, Sparkles, Linkedin } from 'lucide-react';
+import { Search, Menu, X, Github, Sparkles, Linkedin } from 'lucide-react';
 
 const App: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState<string>('simple-intros');
   const [searchQuery, setSearchQuery] = useState('');
 
-  // Simple smooth scroll handler
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
@@ -19,7 +18,6 @@ const App: React.FC = () => {
     }
   };
 
-  // Filter courses based on search
   const filteredData = COURSE_DATA.map(category => ({
     ...category,
     courses: category.courses.filter(course =>
@@ -28,11 +26,10 @@ const App: React.FC = () => {
     )
   })).filter(category => category.courses.length > 0);
 
-  // Scroll spy to update active section
   useEffect(() => {
     const handleScroll = () => {
       const sections = COURSE_DATA.map(c => document.getElementById(c.id));
-      const scrollPosition = window.scrollY + 150; // Offset
+      const scrollPosition = window.scrollY + 150;
 
       for (const section of sections) {
         if (section && section.offsetTop <= scrollPosition && (section.offsetTop + section.offsetHeight) > scrollPosition) {
@@ -47,58 +44,60 @@ const App: React.FC = () => {
 
   return (
     <div className="min-h-screen flex flex-col relative">
-      {/* Mobile backdrop */}
-      {isMobileMenuOpen && (
-        <div
-          className="fixed inset-0 z-30 bg-black/20 md:hidden"
-          onClick={() => setIsMobileMenuOpen(false)}
-        />
-      )}
 
-      {/* Navbar */}
-      <header className="fixed top-0 left-0 right-0 z-40 bg-white/90 backdrop-blur-md border-b border-slate-200">
-        <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 h-14 sm:h-16 flex items-center justify-between">
-          <div className="flex items-center cursor-pointer shrink-0" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-            <div className="flex flex-wrap w-6 h-6 gap-0.5 mr-3">
-              <div className="w-[11px] h-[11px] bg-[#f25022]" />
-              <div className="w-[11px] h-[11px] bg-[#7fba00]" />
-              <div className="w-[11px] h-[11px] bg-[#00a4ef]" />
-              <div className="w-[11px] h-[11px] bg-[#ffb900]" />
-            </div>
-            <h1 className="text-lg sm:text-xl font-bold text-slate-900 tracking-tight">Microsoft Learn<span className="text-[#0078d4] font-normal">Hub</span></h1>
-          </div>
+      {/* Main Content */}
+      <main className="flex-grow pt-20 pb-16 px-3 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full flex gap-8">
 
-          {/* Desktop Search */}
-          <div className="hidden md:flex items-center flex-1 max-w-md mx-8">
-            <div className="relative w-full">
-              <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                <Search className="h-4 w-4 text-slate-400" />
+        <div className="flex-1 min-w-0">
+
+          {filteredData.map((category) => (
+            <CategorySection key={category.id} category={category} />
+          ))}
+
+          {/* Footer */}
+          <footer className="mt-12 pt-8 border-t border-slate-200 text-center text-slate-500 text-sm">
+
+            <div className="mt-8 mb-8 p-5 sm:p-6 bg-slate-50 rounded-2xl border border-slate-100 w-full sm:max-w-2xl mx-auto">
+
+              {/* Original credit */}
+              <p className="text-slate-600 font-medium mb-3">
+                Built by 2nd Year Students at <span className="font-semibold text-slate-800">ESI Algiers</span> 🇩🇿
+              </p>
+
+              {/* Your credit */}
+              <p className="text-slate-600 font-medium mb-4">
+                Based on an original project, modified by <span className="font-semibold text-slate-800">Your Name</span>
+              </p>
+
+              {/* LinkedIn */}
+              <div className="flex justify-center">
+                <a
+                  href="https://www.linkedin.com/in/jamshed-ali-panhwar-6a005b384"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center text-slate-600 hover:text-blue-600 transition-all duration-200 group"
+                >
+                  <div className="p-1.5 bg-white rounded-full border border-slate-200 group-hover:border-blue-200 shadow-sm mr-2 group-hover:bg-blue-50">
+                    <Linkedin className="w-4 h-4 text-[#0A66C2]" />
+                  </div>
+                  <span className="font-medium">Jamshed Ali</span>
+                </a>
               </div>
-              <input
-                type="text"
-                placeholder="Search topics, courses..."
-                className="block w-full pl-10 pr-3 py-2 border border-slate-200 rounded-full leading-5 bg-slate-50 placeholder-slate-400 focus:outline-none focus:bg-white focus:ring-2 focus:ring-blue-500 focus:border-transparent sm:text-sm transition-all"
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-              />
+
             </div>
-          </div>
 
-          <div className="flex items-center space-x-4">
-            <a href="#" className="text-slate-500 hover:text-slate-900 hidden md:block">
-              <Github className="w-5 h-5" />
-            </a>
-            <button
-              className="md:hidden p-2 text-slate-500"
-              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            >
-              {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-            </button>
-          </div>
+            <p className="mt-2 text-slate-400">
+              &copy; {new Date().getFullYear()} MS Learning Hub.
+            </p>
+          </footer>
+
         </div>
+      </main>
+    </div>
+  );
+};
 
-        {/* Mobile Search & Menu */}
-        {isMobileMenuOpen && (
+export default App;        {isMobileMenuOpen && (
           <div className="md:hidden bg-white border-b border-slate-200 p-4 animate-in slide-in-from-top-5 max-h-[80vh] overflow-y-auto">
             <div className="relative mb-3">
               <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
