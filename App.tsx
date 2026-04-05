@@ -44,57 +44,44 @@ const App: React.FC = () => {
 
   return (
     <div className="min-h-screen flex flex-col relative">
+      <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-between items-center h-16">
+            <div className="flex items-center gap-2">
+              <div className="bg-blue-600 p-1.5 rounded-lg">
+                <BookOpen className="w-5 h-5 text-white" />
+              </div>
+              <span className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-slate-900 to-slate-700">
+                MS Learning Hub
+              </span>
+            </div>
 
-      <main className="flex-grow pt-20 pb-16 px-3 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full flex gap-8">
-
-        <div className="flex-1 min-w-0">
-
-          {filteredData.map((category) => (
-            <CategorySection key={category.id} category={category} />
-          ))}
-
-          {/* Footer */}
-          <footer className="mt-12 pt-8 border-t border-slate-200 text-center text-slate-500 text-sm">
-
-            <div className="mt-8 mb-8 p-5 sm:p-6 bg-slate-50 rounded-2xl border border-slate-100 block w-full sm:inline-block sm:max-w-2xl">
-
-              <p className="text-slate-600 font-medium mb-4">
-                Built by 2nd Year Students at <span className="font-semibold text-slate-800">ESI Algiers</span> 🇩🇿
-              </p>
-
-              <p className="text-slate-600 font-medium mb-4">
-                Based on an original project, modified by <span className="font-semibold text-slate-800">Your Name</span>
-              </p>
-
-              <div className="flex flex-col sm:flex-row justify-center items-center space-y-3 sm:space-y-0 sm:space-x-8">
-
-                <a
-                  href="https://www.linkedin.com/in/jamshed-ali-panhwar-6a005b384"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center text-slate-600 hover:text-blue-600 transition-all duration-200 group"
-                >
-                  <div className="p-1.5 bg-white rounded-full border border-slate-200 group-hover:border-blue-200 shadow-sm mr-2 group-hover:bg-blue-50">
-                    <Linkedin className="w-4 h-4 text-[#0A66C2]" />
-                  </div>
-                  <span className="font-medium">Jamshed Ali</span>
-                </a>
-
+            <div className="hidden md:flex flex-1 max-w-md mx-8">
+              <div className="relative w-full">
+                <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                  <Search className="h-4 w-4 text-slate-400" />
+                </div>
+                <input
+                  type="text"
+                  placeholder="Search courses or topics..."
+                  className="block w-full pl-10 pr-3 py-2 border border-slate-200 rounded-xl bg-slate-50/50 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all"
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                />
               </div>
             </div>
 
-            <p className="mt-2 text-slate-400">
-              &copy; {new Date().getFullYear()} MS Learning Hub.
-            </p>
-          </footer>
-
+            <button
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              className="md:hidden p-2 rounded-lg text-slate-600 hover:bg-slate-100"
+            >
+              {isMobileMenuOpen ? <X /> : <Menu />}
+            </button>
+          </div>
         </div>
-      </main>
-    </div>
-  );
-};
 
-export default App;          <div className="md:hidden bg-white border-b border-slate-200 p-4 animate-in slide-in-from-top-5 max-h-[80vh] overflow-y-auto">
+        {isMobileMenuOpen && (
+          <div className="md:hidden bg-white border-b border-slate-200 p-4 animate-in slide-in-from-top-5 max-h-[80vh] overflow-y-auto">
             <div className="relative mb-3">
               <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                 <Search className="h-4 w-4 text-slate-400" />
@@ -126,10 +113,7 @@ export default App;          <div className="md:hidden bg-white border-b border-
         )}
       </header>
 
-      {/* Main Content */}
       <main className="flex-grow pt-20 pb-16 px-3 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full flex gap-8">
-
-        {/* Sidebar Navigation (Desktop) */}
         <aside className="hidden lg:block w-64 flex-shrink-0">
           <div className="sticky top-24">
             <h3 className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-4 px-3">
@@ -166,18 +150,13 @@ export default App;          <div className="md:hidden bg-white border-b border-
           </div>
         </aside>
 
-        {/* Course Feed */}
         <div className="flex-1 min-w-0">
-
-          {/* Hero banner */}
           {!searchQuery && (
             <div className="mb-10 rounded-2xl bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 overflow-hidden relative">
-              {/* subtle grid background */}
               <div className="absolute inset-0 opacity-[0.07]"
                 style={{ backgroundImage: 'repeating-linear-gradient(0deg,transparent,transparent 28px,rgba(255,255,255,1) 28px,rgba(255,255,255,1) 29px),repeating-linear-gradient(90deg,transparent,transparent 28px,rgba(255,255,255,1) 28px,rgba(255,255,255,1) 29px)' }}
               />
               <div className="relative z-10 flex flex-col lg:flex-row items-center gap-6 px-6 py-8 sm:px-10 sm:py-10">
-                {/* left: text */}
                 <div className="flex-1 text-center lg:text-left">
                   <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-blue-400 uppercase tracking-widest mb-3">
                     <Sparkles className="w-3 h-3" /> Master Microsoft Tech
@@ -197,7 +176,6 @@ export default App;          <div className="md:hidden bg-white border-b border-
                     Start learning
                   </button>
                 </div>
-                {/* right: stacked certs */}
                 <div className="flex-shrink-0 w-full max-w-xs sm:max-w-sm lg:w-80">
                   <CertificateShowcase />
                 </div>
@@ -224,12 +202,13 @@ export default App;          <div className="md:hidden bg-white border-b border-
             </div>
           )}
 
-          {/* Footer */}
           <footer className="mt-12 pt-8 border-t border-slate-200 text-center text-slate-500 text-sm">
-
             <div className="mt-8 mb-8 p-5 sm:p-6 bg-slate-50 rounded-2xl border border-slate-100 block w-full sm:inline-block sm:max-w-2xl">
               <p className="text-slate-600 font-medium mb-4">
                 Built by 2nd Year Students at <span className="font-semibold text-slate-800">ESI Algiers</span> 🇩🇿
+              </p>
+              <p className="text-slate-600 font-medium mb-4">
+                Based on an original project, modified by <span className="font-semibold text-slate-800">Jamshed Ali</span>
               </p>
               <div className="flex flex-col sm:flex-row justify-center items-center space-y-3 sm:space-y-0 sm:space-x-8">
                 <a
@@ -254,14 +233,23 @@ export default App;          <div className="md:hidden bg-white border-b border-
                   </div>
                   <span className="font-medium">Amine Gharout</span>
                 </a>
+                <a
+                  href="https://www.linkedin.com/in/jamshed-ali-panhwar-6a005b384"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center text-slate-600 hover:text-blue-600 transition-all duration-200 group"
+                >
+                  <div className="p-1.5 bg-white rounded-full border border-slate-200 group-hover:border-blue-200 shadow-sm mr-2 group-hover:bg-blue-50">
+                    <Linkedin className="w-4 h-4 text-[#0A66C2]" />
+                  </div>
+                  <span className="font-medium">Jamshed Ali</span>
+                </a>
               </div>
             </div>
-
             <p className="mt-2 text-slate-400">&copy; {new Date().getFullYear()} MS Learning Hub.</p>
           </footer>
         </div>
       </main>
-
     </div>
   );
 };
