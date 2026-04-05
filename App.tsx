@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { COURSE_DATA } from './constants';
 import { CategorySection } from './components/CategorySection';
 import { CertificateShowcase } from './components/CertificateShowcase';
-import { Search, Menu, X, Github, Sparkles, Linkedin } from 'lucide-react';
+import { Search, Menu, X, Github, BookOpen, Sparkles, Linkedin } from 'lucide-react';
 
 const App: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -45,7 +45,6 @@ const App: React.FC = () => {
   return (
     <div className="min-h-screen flex flex-col relative">
 
-      {/* Main Content */}
       <main className="flex-grow pt-20 pb-16 px-3 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full flex gap-8">
 
         <div className="flex-1 min-w-0">
@@ -57,20 +56,18 @@ const App: React.FC = () => {
           {/* Footer */}
           <footer className="mt-12 pt-8 border-t border-slate-200 text-center text-slate-500 text-sm">
 
-            <div className="mt-8 mb-8 p-5 sm:p-6 bg-slate-50 rounded-2xl border border-slate-100 w-full sm:max-w-2xl mx-auto">
+            <div className="mt-8 mb-8 p-5 sm:p-6 bg-slate-50 rounded-2xl border border-slate-100 block w-full sm:inline-block sm:max-w-2xl">
 
-              {/* Original credit */}
-              <p className="text-slate-600 font-medium mb-3">
+              <p className="text-slate-600 font-medium mb-4">
                 Built by 2nd Year Students at <span className="font-semibold text-slate-800">ESI Algiers</span> 🇩🇿
               </p>
 
-              {/* Your credit */}
               <p className="text-slate-600 font-medium mb-4">
                 Based on an original project, modified by <span className="font-semibold text-slate-800">Your Name</span>
               </p>
 
-              {/* LinkedIn */}
-              <div className="flex justify-center">
+              <div className="flex flex-col sm:flex-row justify-center items-center space-y-3 sm:space-y-0 sm:space-x-8">
+
                 <a
                   href="https://www.linkedin.com/in/jamshed-ali-panhwar-6a005b384"
                   target="_blank"
@@ -82,8 +79,8 @@ const App: React.FC = () => {
                   </div>
                   <span className="font-medium">Jamshed Ali</span>
                 </a>
-              </div>
 
+              </div>
             </div>
 
             <p className="mt-2 text-slate-400">
@@ -97,8 +94,7 @@ const App: React.FC = () => {
   );
 };
 
-export default App;        {isMobileMenuOpen && (
-          <div className="md:hidden bg-white border-b border-slate-200 p-4 animate-in slide-in-from-top-5 max-h-[80vh] overflow-y-auto">
+export default App;          <div className="md:hidden bg-white border-b border-slate-200 p-4 animate-in slide-in-from-top-5 max-h-[80vh] overflow-y-auto">
             <div className="relative mb-3">
               <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                 <Search className="h-4 w-4 text-slate-400" />
