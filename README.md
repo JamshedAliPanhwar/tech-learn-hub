@@ -1,7 +1,8 @@
 <div align="center">
 
-# Learn-hub-esi 
-
+# CourseNavigator Hub  
+<sub><em>Originally Learn-hub-esi</em></sub>
+ 
 A modern, interactive learning platform with curated courses for AI, ML, Web Dev, and more.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -37,7 +38,7 @@ A modern, interactive learning platform with curated courses for AI, ML, Web Dev
 1. **Clone the repository**
    ```bash
    git clone https://github.com/yourusername/learn-hub-esi.git
-   cd learn-hub-esi
+   cd course-navigator-hub
    ```
 
 2. **Install dependencies**
@@ -109,8 +110,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📌 Fork Notes
 
 <div align="center">
-This project was **originally developed by Amine Gharout** ❤️.  
-I have forked it and made slight changes, including renaming it to **CourseNavigator Hub** and adding my own improvements.  
+This project was originally developed by Amine Gharout ❤️.  
+I have forked it and made slight changes, including renaming it to CourseNavigator Hub and adding my own improvements.  
 </div>
-The original repository can be found here: [Learn-hub-esi](https://github.com/Amine-Gharout/Learn-hub-esi).
+The original repository can be found here: (https://github.com/Amine-Gharout/Learn-hub-esi).
 
