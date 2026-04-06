@@ -18,6 +18,7 @@ A modern, interactive learning platform with curated courses for AI, ML, Web Dev
 - 🔍 **Smart Search** - Quickly find courses by title or topics
 - 📱 **Responsive Design** - Works seamlessly on desktop and mobile devices
 - 🎨 **Modern UI** - Clean, intuitive interface with smooth animations
+- 🌙 **Dark Mode Support** - Toggle between light and dark themes for better accessibility
 
 ## 🛠️ Tech Stack
 
