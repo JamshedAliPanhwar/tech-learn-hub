@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+/* Tailwind v4 Dark Mode configuration */
+@variant dark (&:where(.dark, .dark *));
+
 @theme {
   --color-blue-50: #e6f2fa;
   --color-blue-100: #cce4f6;
@@ -11,4 +14,11 @@
   --color-blue-700: #004578;
   --color-blue-800: #002d50;
   --color-blue-900: #001628;
+}
+
+/* Global transitions for smoother theme switching */
+@layer base {
+  *, ::after, ::before {
+    @apply transition-colors duration-200;
+  }
 }
