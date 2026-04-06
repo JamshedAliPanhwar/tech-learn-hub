@@ -8,12 +8,19 @@
   <meta name="description" content="CourseNavigator Hub: Explore top Microsoft Learn certifications in Azure, AI, GitHub Copilot, .NET, and more." />
   <title>CourseNavigator Hub</title>
 
-  <!-- SEO & Social Sharing -->
   <link rel="canonical" href="https://course-navigator-hub.tech/" />
   <meta property="og:url" content="https://course-navigator-hub.tech/" />
   <meta property="og:site_name" content="CourseNavigator Hub" />
   <meta property="og:title" content="CourseNavigator Hub" />
   <meta property="og:description" content="A curated hub for Microsoft Learn courses and certifications." />
+
+  <script>
+    if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark')
+    } else {
+      document.documentElement.classList.remove('dark')
+    }
+  </script>
 
   <style>
     body {
@@ -25,7 +32,7 @@
   </style>
 </head>
 
-<body class="bg-slate-50 text-slate-900 antialiased">
+<body class="bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-50 antialiased">
   <div id="root"></div>
   <script type="module" src="/index.tsx"></script>
 </body>
