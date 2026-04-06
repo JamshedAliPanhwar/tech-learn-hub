@@ -2,12 +2,31 @@ import React, { useState, useEffect } from 'react';
 import { COURSE_DATA } from './constants';
 import { CategorySection } from './components/CategorySection';
 import { CertificateShowcase } from './components/CertificateShowcase';
-import { Search, Menu, X, Github, BookOpen, Sparkles, Linkedin } from 'lucide-react';
+import { Search, Menu, X, Github, BookOpen, Sparkles, Linkedin, Sun, Moon } from 'lucide-react';
 
 const App: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState<string>('simple-intros');
   const [searchQuery, setSearchQuery] = useState('');
+  const [theme, setTheme] = useState<'light' | 'dark'>('light');
+
+  // Initialize theme based on document class (set by your index.html script)
+  useEffect(() => {
+    const isDark = document.documentElement.classList.contains('dark');
+    setTheme(isDark ? 'dark' : 'light');
+  }, []);
+
+  const toggleTheme = () => {
+    const newTheme = theme === 'light' ? 'dark' : 'light';
+    setTheme(newTheme);
+    if (newTheme === 'dark') {
+      document.documentElement.classList.add('dark');
+      localStorage.setItem('theme', 'dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+      localStorage.setItem('theme', 'light');
+    }
+  };
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -43,15 +62,15 @@ const App: React.FC = () => {
   }, []);
 
   return (
-    <div className="min-h-screen flex flex-col relative">
-      <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
+    <div className="min-h-screen flex flex-col relative bg-white dark:bg-slate-950 transition-colors duration-300">
+      <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center gap-2">
               <div className="bg-blue-600 p-1.5 rounded-lg">
                 <BookOpen className="w-5 h-5 text-white" />
               </div>
-              <span className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-slate-900 to-slate-700">
+              <span className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-slate-900 to-slate-700 dark:from-white dark:to-slate-400">
                 MS Learning Hub
               </span>
             </div>
@@ -64,24 +83,34 @@ const App: React.FC = () => {
                 <input
                   type="text"
                   placeholder="Search courses or topics..."
-                  className="block w-full pl-10 pr-3 py-2 border border-slate-200 rounded-xl bg-slate-50/50 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all"
+                  className="block w-full pl-10 pr-3 py-2 border border-slate-200 dark:border-slate-700 rounded-xl bg-slate-50/50 dark:bg-slate-800/50 text-sm dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all"
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
                 />
               </div>
             </div>
 
-            <button
-              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="md:hidden p-2 rounded-lg text-slate-600 hover:bg-slate-100"
-            >
-              {isMobileMenuOpen ? <X /> : <Menu />}
-            </button>
+            <div className="flex items-center gap-2">
+              <button
+                onClick={toggleTheme}
+                className="p-2 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+                title="Toggle Theme"
+              >
+                {theme === 'dark' ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
+              </button>
+              
+              <button
+                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                className="md:hidden p-2 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800"
+              >
+                {isMobileMenuOpen ? <X /> : <Menu />}
+              </button>
+            </div>
           </div>
         </div>
 
         {isMobileMenuOpen && (
-          <div className="md:hidden bg-white border-b border-slate-200 p-4 animate-in slide-in-from-top-5 max-h-[80vh] overflow-y-auto">
+          <div className="md:hidden bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 p-4 animate-in slide-in-from-top-5 max-h-[80vh] overflow-y-auto">
             <div className="relative mb-3">
               <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                 <Search className="h-4 w-4 text-slate-400" />
@@ -89,7 +118,7 @@ const App: React.FC = () => {
               <input
                 type="text"
                 placeholder="Search courses..."
-                className="block w-full pl-10 p-2.5 border border-slate-200 rounded-lg bg-slate-50 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                className="block w-full pl-10 p-2.5 border border-slate-200 dark:border-slate-700 rounded-lg bg-slate-50 dark:bg-slate-800 text-sm dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
               />
@@ -101,8 +130,8 @@ const App: React.FC = () => {
                   onClick={() => scrollToSection(category.id)}
                   className={`w-full text-left px-3 py-2.5 rounded-lg text-sm font-medium flex items-center justify-between min-h-[44px] ${
                     activeSection === category.id
-                      ? 'bg-[#0078d4]/10 text-[#005a9e]'
-                      : 'text-slate-600 hover:bg-[#0078d4]/8 font-semibold'
+                      ? 'bg-[#0078d4]/10 text-[#005a9e] dark:text-blue-400'
+                      : 'text-slate-600 dark:text-slate-400 hover:bg-[#0078d4]/8 font-semibold'
                   }`}
                 >
                   <span className="truncate pr-2">{category.title}</span>
@@ -126,8 +155,8 @@ const App: React.FC = () => {
                   onClick={() => scrollToSection(category.id)}
                   className={`w-full text-left px-3 py-2 rounded-lg text-sm font-medium transition-colors flex items-center justify-between group ${
                     activeSection === category.id
-                      ? 'bg-[#0078d4]/10 text-[#005a9e] shadow-sm ring-1 ring-[#0078d4]/30'
-                      : 'text-slate-600 hover:bg-[#0078d4]/8 hover:text-[#003a70] font-semibold'
+                      ? 'bg-[#0078d4]/10 text-[#005a9e] dark:text-blue-400 shadow-sm ring-1 ring-[#0078d4]/30'
+                      : 'text-slate-600 dark:text-slate-400 hover:bg-[#0078d4]/8 dark:hover:bg-slate-800 hover:text-[#003a70] dark:hover:text-white font-semibold'
                   }`}
                 >
                   <span className="truncate">{category.title}</span>
@@ -135,7 +164,7 @@ const App: React.FC = () => {
               ))}
             </nav>
 
-            <div className="mt-8 p-4 bg-gradient-to-br from-slate-900 to-slate-800 rounded-xl text-white">
+            <div className="mt-8 p-4 bg-gradient-to-br from-slate-900 to-slate-800 dark:from-blue-900 dark:to-slate-900 rounded-xl text-white shadow-lg">
               <h4 className="font-bold text-sm mb-2">Microsoft Cloud Skills?</h4>
               <p className="text-xs text-slate-300 mb-3">
                 Start with the recommended Azure paths.
@@ -152,7 +181,7 @@ const App: React.FC = () => {
 
         <div className="flex-1 min-w-0">
           {!searchQuery && (
-            <div className="mb-10 rounded-2xl bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 overflow-hidden relative">
+            <div className="mb-10 rounded-2xl bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 overflow-hidden relative border border-slate-800">
               <div className="absolute inset-0 opacity-[0.07]"
                 style={{ backgroundImage: 'repeating-linear-gradient(0deg,transparent,transparent 28px,rgba(255,255,255,1) 28px,rgba(255,255,255,1) 29px),repeating-linear-gradient(90deg,transparent,transparent 28px,rgba(255,255,255,1) 28px,rgba(255,255,255,1) 29px)' }}
               />
@@ -188,36 +217,36 @@ const App: React.FC = () => {
             ))
           ) : (
             <div className="text-center py-20">
-              <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-slate-100 mb-4">
+              <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-slate-100 dark:bg-slate-800 mb-4">
                 <Search className="w-8 h-8 text-slate-400" />
               </div>
-              <h3 className="text-lg font-medium text-slate-900">No courses found</h3>
-              <p className="mt-1 text-slate-500">Try adjusting your search terms.</p>
+              <h3 className="text-lg font-medium text-slate-900 dark:text-white">No courses found</h3>
+              <p className="mt-1 text-slate-500 dark:text-slate-400">Try adjusting your search terms.</p>
               <button
                 onClick={() => setSearchQuery('')}
-                className="mt-4 text-blue-600 hover:text-blue-800 font-medium"
+                className="mt-4 text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 font-medium"
               >
                 Clear Search
               </button>
             </div>
           )}
 
-          <footer className="mt-12 pt-8 border-t border-slate-200 text-center text-slate-500 text-sm">
-            <div className="mt-8 mb-8 p-5 sm:p-6 bg-slate-50 rounded-2xl border border-slate-100 block w-full sm:inline-block sm:max-w-2xl">
-              <p className="text-slate-600 font-medium mb-4">
-                Built by 2nd Year Students at <span className="font-semibold text-slate-800">ESI Algiers</span> 🇩🇿
+          <footer className="mt-12 pt-8 border-t border-slate-200 dark:border-slate-800 text-center text-slate-500 dark:text-slate-400 text-sm">
+            <div className="mt-8 mb-8 p-5 sm:p-6 bg-slate-50 dark:bg-slate-900 rounded-2xl border border-slate-100 dark:border-slate-800 block w-full sm:inline-block sm:max-w-2xl">
+              <p className="text-slate-600 dark:text-slate-300 font-medium mb-4">
+                Built by 2nd Year Students at <span className="font-semibold text-slate-800 dark:text-white">ESI Algiers</span> 🇩🇿
               </p>
-              <p className="text-slate-600 font-medium mb-4">
-                Based on an original project, modified by <span className="font-semibold text-slate-800">Jamshed Ali</span>
+              <p className="text-slate-600 dark:text-slate-300 font-medium mb-4">
+                Based on an original project, modified by <span className="font-semibold text-slate-800 dark:text-white">Jamshed Ali</span>
               </p>
               <div className="flex flex-col sm:flex-row justify-center items-center space-y-3 sm:space-y-0 sm:space-x-8">
                 <a
                   href="https://www.linkedin.com/in/karim-merzouk-589479323"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center text-slate-600 hover:text-blue-600 transition-all duration-200 group"
+                  className="flex items-center text-slate-600 dark:text-slate-400 hover:text-blue-600 transition-all duration-200 group"
                 >
-                  <div className="p-1.5 bg-white rounded-full border border-slate-200 group-hover:border-blue-200 shadow-sm mr-2 group-hover:bg-blue-50">
+                  <div className="p-1.5 bg-white dark:bg-slate-800 rounded-full border border-slate-200 dark:border-slate-700 group-hover:border-blue-200 shadow-sm mr-2 group-hover:bg-blue-50 dark:group-hover:bg-blue-900/30">
                     <Linkedin className="w-4 h-4 text-[#0A66C2]" />
                   </div>
                   <span className="font-medium">Karim Merzouk</span>
@@ -226,9 +255,9 @@ const App: React.FC = () => {
                   href="https://www.linkedin.com/in/amine-gharout-a03965252/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center text-slate-600 hover:text-blue-600 transition-all duration-200 group"
+                  className="flex items-center text-slate-600 dark:text-slate-400 hover:text-blue-600 transition-all duration-200 group"
                 >
-                  <div className="p-1.5 bg-white rounded-full border border-slate-200 group-hover:border-blue-200 shadow-sm mr-2 group-hover:bg-blue-50">
+                  <div className="p-1.5 bg-white dark:bg-slate-800 rounded-full border border-slate-200 dark:border-slate-700 group-hover:border-blue-200 shadow-sm mr-2 group-hover:bg-blue-50 dark:group-hover:bg-blue-900/30">
                     <Linkedin className="w-4 h-4 text-[#0A66C2]" />
                   </div>
                   <span className="font-medium">Amine Gharout</span>
@@ -237,9 +266,9 @@ const App: React.FC = () => {
                   href="https://www.linkedin.com/in/jamshed-ali-panhwar-6a005b384"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center text-slate-600 hover:text-blue-600 transition-all duration-200 group"
+                  className="flex items-center text-slate-600 dark:text-slate-400 hover:text-blue-600 transition-all duration-200 group"
                 >
-                  <div className="p-1.5 bg-white rounded-full border border-slate-200 group-hover:border-blue-200 shadow-sm mr-2 group-hover:bg-blue-50">
+                  <div className="p-1.5 bg-white dark:bg-slate-800 rounded-full border border-slate-200 dark:border-slate-700 group-hover:border-blue-200 shadow-sm mr-2 group-hover:bg-blue-50 dark:group-hover:bg-blue-900/30">
                     <Linkedin className="w-4 h-4 text-[#0A66C2]" />
                   </div>
                   <span className="font-medium">Jamshed Ali</span>
